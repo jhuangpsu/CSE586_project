@@ -1,0 +1,1 @@
+python3 eval.py --info "eval_pretrained_e27" --mode "test" --dataset_root "./dataset/lab_test2/" --imgsize 480 --nsrc 4 --nscale 5 --batch_size 1 --loadckpt="./checkpoints/pretrained/model_000027.ckpt" --logckptdir None --loggingdir "./logs/" --outdir "./outputs_test2/"

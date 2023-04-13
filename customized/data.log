@@ -1,0 +1,7 @@
+scan1: 4 images
+scan2: 24 images with the object on the a table
+scan3: 20 images with the object on the floor
+scan4: poses computed from colamp
+scan5: poses from the toolbox, with auto generated depth range (output from colmap_input.py)
+scan6: poses from the toolbox, with less minimum depth (output from colmap_input.py)
+scan7: poses from the toolbox, manually specified depth ranges and pair.txt

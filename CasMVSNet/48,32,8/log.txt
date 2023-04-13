@@ -1,0 +1,1439 @@
+current time 20220418_002206
+creating new summary file
+argv: ['--local_rank=0', '--logdir', '48,32,8', '--dataset=dtu_yao', '--batch_size=1', '--trainpath=./mvs_training/', '--trainlist', 'lists/dtu/train.txt', '--testlist', 'lists/dtu/test.txt', '--numdepth=192', '--depth_inter_r', '4,2,1', '--dlossw', '0.5,1.0,2.0', '--batch_size', '1', '--eval_freq', '3']
+################################  args  ################################
+mode      	train                         	<class 'str'>       
+model     	mvsnet                        	<class 'str'>       
+device    	cuda                          	<class 'str'>       
+dataset   	dtu_yao                       	<class 'str'>       
+trainpath 	./mvs_training/               	<class 'str'>       
+testpath  	./mvs_training/               	<class 'str'>       
+trainlist 	lists/dtu/train.txt           	<class 'str'>       
+testlist  	lists/dtu/test.txt            	<class 'str'>       
+epochs    	2                             	<class 'int'>       
+lr        	0.001                         	<class 'float'>     
+lrepochs  	10,12,14:2                    	<class 'str'>       
+wd        	0.0                           	<class 'float'>     
+batch_size	1                             	<class 'int'>       
+numdepth  	192                           	<class 'int'>       
+interval_scale	1.06                          	<class 'float'>     
+loadckpt  	None                          	<class 'NoneType'>  
+logdir    	48,32,8                       	<class 'str'>       
+resume    	False                         	<class 'bool'>      
+summary_freq	50                            	<class 'int'>       
+save_freq 	1                             	<class 'int'>       
+eval_freq 	3                             	<class 'int'>       
+seed      	1                             	<class 'int'>       
+pin_m     	False                         	<class 'bool'>      
+local_rank	0                             	<class 'int'>       
+share_cr  	False                         	<class 'bool'>      
+ndepths   	48,32,8                       	<class 'str'>       
+depth_inter_r	4,2,1                         	<class 'str'>       
+dlossw    	0.5,1.0,2.0                   	<class 'str'>       
+cr_base_chs	8,8,8                         	<class 'str'>       
+grad_method	detach                        	<class 'str'>       
+using_apex	False                         	<class 'bool'>      
+sync_bn   	False                         	<class 'bool'>      
+opt_level 	O0                            	<class 'str'>       
+keep_batchnorm_fp32	None                          	<class 'NoneType'>  
+loss_scale	None                          	<class 'NoneType'>  
+########################################################################
+**********netphs:[48, 32, 8], depth_intervals_ratio:[4.0, 2.0, 1.0],  grad:detach, chs:[8, 8, 8]************
+*************feature extraction arch mode:fpn****************
+start at epoch 0
+Number of model parameters: 934304
+Let's use 1 GPUs!
+mvsdataset kwargs {}
+dataset train metas: 27097
+mvsdataset kwargs {}
+dataset test metas: 7546
+Epoch 0:
+Epoch 0/2, Iter 0/27097, lr 0.000335, train loss = 332.328, depth loss = 94.844, time = 26.502
+Epoch 0/2, Iter 50/27097, lr 0.000401, train loss = 98.470, depth loss = 27.260, time = 1.365
+Epoch 0/2, Iter 100/27097, lr 0.000468, train loss = 100.779, depth loss = 28.459, time = 1.305
+Epoch 0/2, Iter 150/27097, lr 0.000535, train loss = 74.693, depth loss = 21.032, time = 1.387
+Epoch 0/2, Iter 200/27097, lr 0.000601, train loss = 81.420, depth loss = 22.900, time = 1.336
+Epoch 0/2, Iter 250/27097, lr 0.000668, train loss = 63.663, depth loss = 17.718, time = 1.291
+Epoch 0/2, Iter 300/27097, lr 0.000735, train loss = 64.650, depth loss = 18.468, time = 1.554
+Epoch 0/2, Iter 350/27097, lr 0.000801, train loss = 123.161, depth loss = 35.077, time = 1.331
+Epoch 0/2, Iter 400/27097, lr 0.000868, train loss = 238.161, depth loss = 68.027, time = 1.383
+Epoch 0/2, Iter 450/27097, lr 0.000935, train loss = 72.600, depth loss = 20.285, time = 1.387
+Epoch 0/2, Iter 500/27097, lr 0.001000, train loss = 169.941, depth loss = 48.214, time = 1.451
+Epoch 0/2, Iter 550/27097, lr 0.001000, train loss = 10.009, depth loss = 2.562, time = 1.365
+Epoch 0/2, Iter 600/27097, lr 0.001000, train loss = 141.286, depth loss = 39.740, time = 1.334
+Epoch 0/2, Iter 650/27097, lr 0.001000, train loss = 12.462, depth loss = 3.339, time = 1.343
+Epoch 0/2, Iter 700/27097, lr 0.001000, train loss = 57.150, depth loss = 16.017, time = 1.329
+Epoch 0/2, Iter 750/27097, lr 0.001000, train loss = 54.067, depth loss = 15.252, time = 1.398
+Epoch 0/2, Iter 800/27097, lr 0.001000, train loss = 36.618, depth loss = 10.010, time = 1.340
+Epoch 0/2, Iter 850/27097, lr 0.001000, train loss = 28.635, depth loss = 7.933, time = 1.368
+Epoch 0/2, Iter 900/27097, lr 0.001000, train loss = 78.622, depth loss = 22.137, time = 1.295
+Epoch 0/2, Iter 950/27097, lr 0.001000, train loss = 95.590, depth loss = 27.293, time = 1.400
+Epoch 0/2, Iter 1000/27097, lr 0.001000, train loss = 36.621, depth loss = 10.257, time = 1.299
+Epoch 0/2, Iter 1050/27097, lr 0.001000, train loss = 32.283, depth loss = 9.087, time = 1.333
+Epoch 0/2, Iter 1100/27097, lr 0.001000, train loss = 226.755, depth loss = 63.257, time = 1.276
+Epoch 0/2, Iter 1150/27097, lr 0.001000, train loss = 34.690, depth loss = 9.659, time = 1.392
+Epoch 0/2, Iter 1200/27097, lr 0.001000, train loss = 56.023, depth loss = 16.082, time = 1.308
+Epoch 0/2, Iter 1250/27097, lr 0.001000, train loss = 134.348, depth loss = 37.245, time = 1.330
+Epoch 0/2, Iter 1300/27097, lr 0.001000, train loss = 15.131, depth loss = 3.997, time = 1.335
+Epoch 0/2, Iter 1350/27097, lr 0.001000, train loss = 57.383, depth loss = 16.251, time = 1.407
+Epoch 0/2, Iter 1400/27097, lr 0.001000, train loss = 35.696, depth loss = 10.200, time = 1.389
+Epoch 0/2, Iter 1450/27097, lr 0.001000, train loss = 13.478, depth loss = 3.609, time = 1.314
+Epoch 0/2, Iter 1500/27097, lr 0.001000, train loss = 23.137, depth loss = 6.418, time = 1.262
+Epoch 0/2, Iter 1550/27097, lr 0.001000, train loss = 30.057, depth loss = 8.357, time = 1.314
+Epoch 0/2, Iter 1600/27097, lr 0.001000, train loss = 6.436, depth loss = 1.590, time = 1.275
+Epoch 0/2, Iter 1650/27097, lr 0.001000, train loss = 95.108, depth loss = 26.166, time = 1.369
+Epoch 0/2, Iter 1700/27097, lr 0.001000, train loss = 129.278, depth loss = 34.921, time = 1.327
+Epoch 0/2, Iter 1750/27097, lr 0.001000, train loss = 7.500, depth loss = 1.844, time = 1.341
+Epoch 0/2, Iter 1800/27097, lr 0.001000, train loss = 3.250, depth loss = 0.727, time = 1.404
+Epoch 0/2, Iter 1850/27097, lr 0.001000, train loss = 32.472, depth loss = 9.084, time = 1.269
+Epoch 0/2, Iter 1900/27097, lr 0.001000, train loss = 43.960, depth loss = 12.028, time = 1.366
+Epoch 0/2, Iter 1950/27097, lr 0.001000, train loss = 11.641, depth loss = 3.147, time = 1.316
+Epoch 0/2, Iter 2000/27097, lr 0.001000, train loss = 18.798, depth loss = 4.899, time = 1.234
+Epoch 0/2, Iter 2050/27097, lr 0.001000, train loss = 32.659, depth loss = 8.359, time = 1.382
+Epoch 0/2, Iter 2100/27097, lr 0.001000, train loss = 22.192, depth loss = 6.092, time = 1.429
+Epoch 0/2, Iter 2150/27097, lr 0.001000, train loss = 48.430, depth loss = 13.393, time = 1.240
+Epoch 0/2, Iter 2200/27097, lr 0.001000, train loss = 48.486, depth loss = 13.861, time = 1.401
+Epoch 0/2, Iter 2250/27097, lr 0.001000, train loss = 111.315, depth loss = 30.773, time = 1.262
+Epoch 0/2, Iter 2300/27097, lr 0.001000, train loss = 36.359, depth loss = 10.088, time = 1.346
+Epoch 0/2, Iter 2350/27097, lr 0.001000, train loss = 56.578, depth loss = 15.739, time = 1.372
+Epoch 0/2, Iter 2400/27097, lr 0.001000, train loss = 199.302, depth loss = 55.562, time = 1.256
+Epoch 0/2, Iter 2450/27097, lr 0.001000, train loss = 62.212, depth loss = 17.269, time = 1.306
+Epoch 0/2, Iter 2500/27097, lr 0.001000, train loss = 55.183, depth loss = 15.508, time = 1.354
+Epoch 0/2, Iter 2550/27097, lr 0.001000, train loss = 6.913, depth loss = 1.693, time = 1.390
+Epoch 0/2, Iter 2600/27097, lr 0.001000, train loss = 19.899, depth loss = 5.406, time = 1.379
+Epoch 0/2, Iter 2650/27097, lr 0.001000, train loss = 8.673, depth loss = 2.233, time = 1.369
+Epoch 0/2, Iter 2700/27097, lr 0.001000, train loss = 19.556, depth loss = 5.381, time = 1.424
+Epoch 0/2, Iter 2750/27097, lr 0.001000, train loss = 18.941, depth loss = 5.270, time = 1.313
+Epoch 0/2, Iter 2800/27097, lr 0.001000, train loss = 8.246, depth loss = 2.238, time = 1.232
+Epoch 0/2, Iter 2850/27097, lr 0.001000, train loss = 29.727, depth loss = 8.133, time = 1.289
+Epoch 0/2, Iter 2900/27097, lr 0.001000, train loss = 47.151, depth loss = 12.382, time = 1.270
+Epoch 0/2, Iter 2950/27097, lr 0.001000, train loss = 45.506, depth loss = 12.726, time = 1.360
+Epoch 0/2, Iter 3000/27097, lr 0.001000, train loss = 103.312, depth loss = 29.426, time = 1.405
+Epoch 0/2, Iter 3050/27097, lr 0.001000, train loss = 192.575, depth loss = 53.921, time = 1.164
+Epoch 0/2, Iter 3100/27097, lr 0.001000, train loss = 88.593, depth loss = 24.864, time = 1.334
+Epoch 0/2, Iter 3150/27097, lr 0.001000, train loss = 48.161, depth loss = 13.535, time = 1.245
+Epoch 0/2, Iter 3200/27097, lr 0.001000, train loss = 8.732, depth loss = 2.267, time = 1.340
+Epoch 0/2, Iter 3250/27097, lr 0.001000, train loss = 4.714, depth loss = 1.140, time = 1.275
+Epoch 0/2, Iter 3300/27097, lr 0.001000, train loss = 21.675, depth loss = 5.917, time = 1.364
+Epoch 0/2, Iter 3350/27097, lr 0.001000, train loss = 175.287, depth loss = 49.763, time = 1.359
+Epoch 0/2, Iter 3400/27097, lr 0.001000, train loss = 29.901, depth loss = 8.351, time = 1.393
+Epoch 0/2, Iter 3450/27097, lr 0.001000, train loss = 126.328, depth loss = 36.066, time = 1.350
+Epoch 0/2, Iter 3500/27097, lr 0.001000, train loss = 18.971, depth loss = 5.227, time = 1.349
+Epoch 0/2, Iter 3550/27097, lr 0.001000, train loss = 21.635, depth loss = 5.197, time = 1.378
+Epoch 0/2, Iter 3600/27097, lr 0.001000, train loss = 17.559, depth loss = 4.885, time = 1.307
+Epoch 0/2, Iter 3650/27097, lr 0.001000, train loss = 23.820, depth loss = 6.643, time = 1.245
+Epoch 0/2, Iter 3700/27097, lr 0.001000, train loss = 127.158, depth loss = 35.138, time = 1.330
+Epoch 0/2, Iter 3750/27097, lr 0.001000, train loss = 19.214, depth loss = 5.325, time = 1.349
+Epoch 0/2, Iter 3800/27097, lr 0.001000, train loss = 19.181, depth loss = 5.195, time = 1.369
+Epoch 0/2, Iter 3850/27097, lr 0.001000, train loss = 14.527, depth loss = 3.974, time = 1.300
+Epoch 0/2, Iter 3900/27097, lr 0.001000, train loss = 28.871, depth loss = 8.305, time = 1.354
+Epoch 0/2, Iter 3950/27097, lr 0.001000, train loss = 7.690, depth loss = 1.958, time = 1.282
+Epoch 0/2, Iter 4000/27097, lr 0.001000, train loss = 18.224, depth loss = 4.850, time = 1.254
+Epoch 0/2, Iter 4050/27097, lr 0.001000, train loss = 69.091, depth loss = 19.409, time = 1.363
+Epoch 0/2, Iter 4100/27097, lr 0.001000, train loss = 40.580, depth loss = 11.300, time = 1.343
+Epoch 0/2, Iter 4150/27097, lr 0.001000, train loss = 5.238, depth loss = 1.252, time = 1.333
+Epoch 0/2, Iter 4200/27097, lr 0.001000, train loss = 9.045, depth loss = 2.294, time = 1.287
+Epoch 0/2, Iter 4250/27097, lr 0.001000, train loss = 13.726, depth loss = 3.663, time = 1.308
+Epoch 0/2, Iter 4300/27097, lr 0.001000, train loss = 61.011, depth loss = 17.000, time = 1.259
+Epoch 0/2, Iter 4350/27097, lr 0.001000, train loss = 23.918, depth loss = 6.547, time = 1.354
+Epoch 0/2, Iter 4400/27097, lr 0.001000, train loss = 22.387, depth loss = 6.063, time = 1.388
+Epoch 0/2, Iter 4450/27097, lr 0.001000, train loss = 6.234, depth loss = 1.540, time = 1.318
+Epoch 0/2, Iter 4500/27097, lr 0.001000, train loss = 25.408, depth loss = 6.983, time = 1.341
+Epoch 0/2, Iter 4550/27097, lr 0.001000, train loss = 12.290, depth loss = 3.311, time = 1.358
+Epoch 0/2, Iter 4600/27097, lr 0.001000, train loss = 16.535, depth loss = 4.541, time = 1.358
+Epoch 0/2, Iter 4650/27097, lr 0.001000, train loss = 27.237, depth loss = 7.360, time = 1.329
+Epoch 0/2, Iter 4700/27097, lr 0.001000, train loss = 56.146, depth loss = 15.635, time = 1.340
+Epoch 0/2, Iter 4750/27097, lr 0.001000, train loss = 140.277, depth loss = 39.770, time = 1.383
+Epoch 0/2, Iter 4800/27097, lr 0.001000, train loss = 38.560, depth loss = 10.784, time = 1.317
+Epoch 0/2, Iter 4850/27097, lr 0.001000, train loss = 24.295, depth loss = 6.737, time = 1.359
+Epoch 0/2, Iter 4900/27097, lr 0.001000, train loss = 13.879, depth loss = 3.765, time = 1.283
+Epoch 0/2, Iter 4950/27097, lr 0.001000, train loss = 18.280, depth loss = 4.913, time = 1.280
+Epoch 0/2, Iter 5000/27097, lr 0.001000, train loss = 53.179, depth loss = 15.079, time = 1.237
+Epoch 0/2, Iter 5050/27097, lr 0.001000, train loss = 6.259, depth loss = 1.558, time = 1.345
+Epoch 0/2, Iter 5100/27097, lr 0.001000, train loss = 49.039, depth loss = 13.217, time = 1.331
+Epoch 0/2, Iter 5150/27097, lr 0.001000, train loss = 74.692, depth loss = 20.379, time = 1.355
+Epoch 0/2, Iter 5200/27097, lr 0.001000, train loss = 17.834, depth loss = 4.809, time = 1.335
+Epoch 0/2, Iter 5250/27097, lr 0.001000, train loss = 13.612, depth loss = 3.620, time = 1.269
+Epoch 0/2, Iter 5300/27097, lr 0.001000, train loss = 13.933, depth loss = 3.716, time = 1.316
+Epoch 0/2, Iter 5350/27097, lr 0.001000, train loss = 25.116, depth loss = 7.067, time = 1.352
+Epoch 0/2, Iter 5400/27097, lr 0.001000, train loss = 14.221, depth loss = 3.905, time = 1.332
+Epoch 0/2, Iter 5450/27097, lr 0.001000, train loss = 31.601, depth loss = 8.690, time = 1.328
+Epoch 0/2, Iter 5500/27097, lr 0.001000, train loss = 26.239, depth loss = 7.294, time = 1.386
+Epoch 0/2, Iter 5550/27097, lr 0.001000, train loss = 9.115, depth loss = 2.371, time = 1.349
+Epoch 0/2, Iter 5600/27097, lr 0.001000, train loss = 22.888, depth loss = 6.426, time = 1.357
+Epoch 0/2, Iter 5650/27097, lr 0.001000, train loss = 25.254, depth loss = 6.837, time = 1.308
+Epoch 0/2, Iter 5700/27097, lr 0.001000, train loss = 11.499, depth loss = 2.995, time = 1.329
+Epoch 0/2, Iter 5750/27097, lr 0.001000, train loss = 7.097, depth loss = 1.814, time = 1.279
+Epoch 0/2, Iter 5800/27097, lr 0.001000, train loss = 11.649, depth loss = 3.160, time = 1.354
+Epoch 0/2, Iter 5850/27097, lr 0.001000, train loss = 20.324, depth loss = 5.445, time = 1.336
+Epoch 0/2, Iter 5900/27097, lr 0.001000, train loss = 8.222, depth loss = 2.164, time = 1.289
+Epoch 0/2, Iter 5950/27097, lr 0.001000, train loss = 13.632, depth loss = 3.716, time = 1.278
+Epoch 0/2, Iter 6000/27097, lr 0.001000, train loss = 11.788, depth loss = 3.096, time = 1.292
+Epoch 0/2, Iter 6050/27097, lr 0.001000, train loss = 35.291, depth loss = 9.830, time = 1.348
+Epoch 0/2, Iter 6100/27097, lr 0.001000, train loss = 42.827, depth loss = 12.062, time = 1.369
+Epoch 0/2, Iter 6150/27097, lr 0.001000, train loss = 9.111, depth loss = 2.373, time = 1.264
+Epoch 0/2, Iter 6200/27097, lr 0.001000, train loss = 14.203, depth loss = 3.869, time = 1.330
+Epoch 0/2, Iter 6250/27097, lr 0.001000, train loss = 28.466, depth loss = 7.921, time = 1.344
+Epoch 0/2, Iter 6300/27097, lr 0.001000, train loss = 35.954, depth loss = 9.850, time = 1.382
+Epoch 0/2, Iter 6350/27097, lr 0.001000, train loss = 135.197, depth loss = 38.416, time = 1.353
+Epoch 0/2, Iter 6400/27097, lr 0.001000, train loss = 14.626, depth loss = 3.908, time = 1.316
+Epoch 0/2, Iter 6450/27097, lr 0.001000, train loss = 58.722, depth loss = 16.635, time = 1.280
+Epoch 0/2, Iter 6500/27097, lr 0.001000, train loss = 10.097, depth loss = 2.685, time = 1.358
+Epoch 0/2, Iter 6550/27097, lr 0.001000, train loss = 49.461, depth loss = 14.073, time = 1.222
+Epoch 0/2, Iter 6600/27097, lr 0.001000, train loss = 22.512, depth loss = 6.110, time = 1.333
+Epoch 0/2, Iter 6650/27097, lr 0.001000, train loss = 11.372, depth loss = 3.117, time = 1.297
+Epoch 0/2, Iter 6700/27097, lr 0.001000, train loss = 4.439, depth loss = 1.078, time = 1.385
+Epoch 0/2, Iter 6750/27097, lr 0.001000, train loss = 18.795, depth loss = 5.149, time = 1.278
+Epoch 0/2, Iter 6800/27097, lr 0.001000, train loss = 39.167, depth loss = 10.806, time = 1.325
+Epoch 0/2, Iter 6850/27097, lr 0.001000, train loss = 15.901, depth loss = 4.314, time = 1.279
+Epoch 0/2, Iter 6900/27097, lr 0.001000, train loss = 33.224, depth loss = 9.072, time = 1.319
+Epoch 0/2, Iter 6950/27097, lr 0.001000, train loss = 3.431, depth loss = 0.789, time = 1.244
+Epoch 0/2, Iter 7000/27097, lr 0.001000, train loss = 54.845, depth loss = 15.355, time = 1.282
+Epoch 0/2, Iter 7050/27097, lr 0.001000, train loss = 31.621, depth loss = 8.577, time = 1.349
+Epoch 0/2, Iter 7100/27097, lr 0.001000, train loss = 9.676, depth loss = 2.633, time = 1.310
+Epoch 0/2, Iter 7150/27097, lr 0.001000, train loss = 64.156, depth loss = 17.956, time = 1.361
+Epoch 0/2, Iter 7200/27097, lr 0.001000, train loss = 24.469, depth loss = 6.666, time = 1.268
+Epoch 0/2, Iter 7250/27097, lr 0.001000, train loss = 94.474, depth loss = 26.665, time = 1.232
+Epoch 0/2, Iter 7300/27097, lr 0.001000, train loss = 51.453, depth loss = 14.497, time = 1.398
+Epoch 0/2, Iter 7350/27097, lr 0.001000, train loss = 113.018, depth loss = 29.815, time = 1.227
+Epoch 0/2, Iter 7400/27097, lr 0.001000, train loss = 20.017, depth loss = 5.423, time = 1.330
+Epoch 0/2, Iter 7450/27097, lr 0.001000, train loss = 4.064, depth loss = 0.920, time = 1.358
+Epoch 0/2, Iter 7500/27097, lr 0.001000, train loss = 4.673, depth loss = 1.150, time = 1.425
+Epoch 0/2, Iter 7550/27097, lr 0.001000, train loss = 17.793, depth loss = 4.894, time = 1.360
+Epoch 0/2, Iter 7600/27097, lr 0.001000, train loss = 63.098, depth loss = 17.279, time = 1.248
+Epoch 0/2, Iter 7650/27097, lr 0.001000, train loss = 6.583, depth loss = 1.516, time = 1.304
+Epoch 0/2, Iter 7700/27097, lr 0.001000, train loss = 13.105, depth loss = 3.549, time = 1.288
+Epoch 0/2, Iter 7750/27097, lr 0.001000, train loss = 6.666, depth loss = 1.649, time = 1.265
+Epoch 0/2, Iter 7800/27097, lr 0.001000, train loss = 82.049, depth loss = 23.890, time = 1.270
+Epoch 0/2, Iter 7850/27097, lr 0.001000, train loss = 6.872, depth loss = 1.715, time = 1.353
+Epoch 0/2, Iter 7900/27097, lr 0.001000, train loss = 10.971, depth loss = 2.864, time = 1.300
+Epoch 0/2, Iter 7950/27097, lr 0.001000, train loss = 40.642, depth loss = 11.456, time = 1.326
+Epoch 0/2, Iter 8000/27097, lr 0.001000, train loss = 15.992, depth loss = 4.231, time = 1.378
+Epoch 0/2, Iter 8050/27097, lr 0.001000, train loss = 33.280, depth loss = 9.204, time = 1.359
+Epoch 0/2, Iter 8100/27097, lr 0.001000, train loss = 74.905, depth loss = 20.655, time = 1.270
+Epoch 0/2, Iter 8150/27097, lr 0.001000, train loss = 42.565, depth loss = 11.812, time = 1.270
+Epoch 0/2, Iter 8200/27097, lr 0.001000, train loss = 8.147, depth loss = 2.045, time = 1.353
+Epoch 0/2, Iter 8250/27097, lr 0.001000, train loss = 45.312, depth loss = 12.696, time = 1.335
+Epoch 0/2, Iter 8300/27097, lr 0.001000, train loss = 43.999, depth loss = 12.208, time = 1.343
+Epoch 0/2, Iter 8350/27097, lr 0.001000, train loss = 34.963, depth loss = 9.134, time = 1.263
+Epoch 0/2, Iter 8400/27097, lr 0.001000, train loss = 76.238, depth loss = 20.950, time = 1.343
+Epoch 0/2, Iter 8450/27097, lr 0.001000, train loss = 18.140, depth loss = 4.889, time = 1.287
+Epoch 0/2, Iter 8500/27097, lr 0.001000, train loss = 87.178, depth loss = 24.679, time = 1.365
+Epoch 0/2, Iter 8550/27097, lr 0.001000, train loss = 7.846, depth loss = 1.984, time = 1.322
+Epoch 0/2, Iter 8600/27097, lr 0.001000, train loss = 30.076, depth loss = 8.316, time = 1.334
+Epoch 0/2, Iter 8650/27097, lr 0.001000, train loss = 31.392, depth loss = 8.724, time = 1.283
+Epoch 0/2, Iter 8700/27097, lr 0.001000, train loss = 9.146, depth loss = 2.356, time = 1.329
+Epoch 0/2, Iter 8750/27097, lr 0.001000, train loss = 57.309, depth loss = 15.357, time = 1.330
+Epoch 0/2, Iter 8800/27097, lr 0.001000, train loss = 55.650, depth loss = 14.199, time = 1.371
+Epoch 0/2, Iter 8850/27097, lr 0.001000, train loss = 11.755, depth loss = 3.168, time = 1.361
+Epoch 0/2, Iter 8900/27097, lr 0.001000, train loss = 28.014, depth loss = 7.763, time = 1.306
+Epoch 0/2, Iter 8950/27097, lr 0.001000, train loss = 6.402, depth loss = 1.610, time = 1.284
+Epoch 0/2, Iter 9000/27097, lr 0.001000, train loss = 24.826, depth loss = 7.013, time = 1.370
+Epoch 0/2, Iter 9050/27097, lr 0.001000, train loss = 73.548, depth loss = 20.735, time = 1.307
+Epoch 0/2, Iter 9100/27097, lr 0.001000, train loss = 58.490, depth loss = 16.611, time = 1.252
+Epoch 0/2, Iter 9150/27097, lr 0.001000, train loss = 5.167, depth loss = 1.287, time = 1.364
+Epoch 0/2, Iter 9200/27097, lr 0.001000, train loss = 51.697, depth loss = 13.937, time = 1.299
+Epoch 0/2, Iter 9250/27097, lr 0.001000, train loss = 4.921, depth loss = 1.164, time = 1.361
+Epoch 0/2, Iter 9300/27097, lr 0.001000, train loss = 3.951, depth loss = 1.038, time = 1.352
+Epoch 0/2, Iter 9350/27097, lr 0.001000, train loss = 11.934, depth loss = 3.165, time = 1.320
+Epoch 0/2, Iter 9400/27097, lr 0.001000, train loss = 22.913, depth loss = 5.832, time = 1.266
+Epoch 0/2, Iter 9450/27097, lr 0.001000, train loss = 19.728, depth loss = 5.403, time = 1.393
+Epoch 0/2, Iter 9500/27097, lr 0.001000, train loss = 68.965, depth loss = 19.038, time = 1.331
+Epoch 0/2, Iter 9550/27097, lr 0.001000, train loss = 77.304, depth loss = 21.796, time = 1.260
+Epoch 0/2, Iter 9600/27097, lr 0.001000, train loss = 28.623, depth loss = 7.667, time = 1.295
+Epoch 0/2, Iter 9650/27097, lr 0.001000, train loss = 27.648, depth loss = 7.482, time = 1.390
+Epoch 0/2, Iter 9700/27097, lr 0.001000, train loss = 4.625, depth loss = 1.084, time = 1.313
+Epoch 0/2, Iter 9750/27097, lr 0.001000, train loss = 27.863, depth loss = 7.575, time = 1.341
+Epoch 0/2, Iter 9800/27097, lr 0.001000, train loss = 26.786, depth loss = 7.328, time = 1.330
+Epoch 0/2, Iter 9850/27097, lr 0.001000, train loss = 22.292, depth loss = 6.244, time = 1.265
+Epoch 0/2, Iter 9900/27097, lr 0.001000, train loss = 3.693, depth loss = 0.884, time = 1.327
+Epoch 0/2, Iter 9950/27097, lr 0.001000, train loss = 11.515, depth loss = 3.064, time = 1.370
+Epoch 0/2, Iter 10000/27097, lr 0.001000, train loss = 9.887, depth loss = 2.578, time = 1.330
+Epoch 0/2, Iter 10050/27097, lr 0.001000, train loss = 43.042, depth loss = 12.214, time = 1.366
+Epoch 0/2, Iter 10100/27097, lr 0.001000, train loss = 19.041, depth loss = 5.166, time = 1.373
+Epoch 0/2, Iter 10150/27097, lr 0.001000, train loss = 8.179, depth loss = 2.156, time = 1.295
+Epoch 0/2, Iter 10200/27097, lr 0.001000, train loss = 29.003, depth loss = 8.068, time = 1.322
+Epoch 0/2, Iter 10250/27097, lr 0.001000, train loss = 12.515, depth loss = 3.329, time = 1.420
+Epoch 0/2, Iter 10300/27097, lr 0.001000, train loss = 20.652, depth loss = 5.707, time = 1.360
+Epoch 0/2, Iter 10350/27097, lr 0.001000, train loss = 8.793, depth loss = 2.268, time = 1.349
+Epoch 0/2, Iter 10400/27097, lr 0.001000, train loss = 27.356, depth loss = 7.496, time = 1.331
+Epoch 0/2, Iter 10450/27097, lr 0.001000, train loss = 6.271, depth loss = 1.502, time = 1.282
+Epoch 0/2, Iter 10500/27097, lr 0.001000, train loss = 58.377, depth loss = 16.218, time = 1.359
+Epoch 0/2, Iter 10550/27097, lr 0.001000, train loss = 38.348, depth loss = 10.383, time = 1.324
+Epoch 0/2, Iter 10600/27097, lr 0.001000, train loss = 37.812, depth loss = 9.773, time = 1.276
+Epoch 0/2, Iter 10650/27097, lr 0.001000, train loss = 4.483, depth loss = 1.101, time = 1.293
+Epoch 0/2, Iter 10700/27097, lr 0.001000, train loss = 85.747, depth loss = 23.295, time = 1.310
+Epoch 0/2, Iter 10750/27097, lr 0.001000, train loss = 15.057, depth loss = 3.723, time = 1.305
+Epoch 0/2, Iter 10800/27097, lr 0.001000, train loss = 43.196, depth loss = 11.954, time = 1.343
+Epoch 0/2, Iter 10850/27097, lr 0.001000, train loss = 178.048, depth loss = 50.584, time = 1.380
+Epoch 0/2, Iter 10900/27097, lr 0.001000, train loss = 39.212, depth loss = 10.906, time = 1.266
+Epoch 0/2, Iter 10950/27097, lr 0.001000, train loss = 38.302, depth loss = 9.393, time = 1.263
+Epoch 0/2, Iter 11000/27097, lr 0.001000, train loss = 22.148, depth loss = 6.233, time = 1.301
+Epoch 0/2, Iter 11050/27097, lr 0.001000, train loss = 46.363, depth loss = 13.015, time = 1.274
+Epoch 0/2, Iter 11100/27097, lr 0.001000, train loss = 92.996, depth loss = 26.071, time = 1.372
+Epoch 0/2, Iter 11150/27097, lr 0.001000, train loss = 9.020, depth loss = 2.339, time = 1.286
+Epoch 0/2, Iter 11200/27097, lr 0.001000, train loss = 10.648, depth loss = 2.938, time = 1.307
+Epoch 0/2, Iter 11250/27097, lr 0.001000, train loss = 4.954, depth loss = 1.097, time = 1.278
+Epoch 0/2, Iter 11300/27097, lr 0.001000, train loss = 12.514, depth loss = 3.346, time = 1.314
+Epoch 0/2, Iter 11350/27097, lr 0.001000, train loss = 4.442, depth loss = 0.990, time = 1.270
+Epoch 0/2, Iter 11400/27097, lr 0.001000, train loss = 4.145, depth loss = 1.003, time = 1.318
+Epoch 0/2, Iter 11450/27097, lr 0.001000, train loss = 50.690, depth loss = 14.095, time = 1.344
+Epoch 0/2, Iter 11500/27097, lr 0.001000, train loss = 116.049, depth loss = 32.299, time = 1.285
+Epoch 0/2, Iter 11550/27097, lr 0.001000, train loss = 8.836, depth loss = 2.384, time = 1.292
+Epoch 0/2, Iter 11600/27097, lr 0.001000, train loss = 72.886, depth loss = 20.660, time = 1.308
+Epoch 0/2, Iter 11650/27097, lr 0.001000, train loss = 84.501, depth loss = 22.990, time = 1.265
+Epoch 0/2, Iter 11700/27097, lr 0.001000, train loss = 22.332, depth loss = 6.164, time = 1.311
+Epoch 0/2, Iter 11750/27097, lr 0.001000, train loss = 10.154, depth loss = 2.693, time = 1.320
+Epoch 0/2, Iter 11800/27097, lr 0.001000, train loss = 11.069, depth loss = 3.013, time = 1.326
+Epoch 0/2, Iter 11850/27097, lr 0.001000, train loss = 16.712, depth loss = 4.569, time = 1.297
+Epoch 0/2, Iter 11900/27097, lr 0.001000, train loss = 23.666, depth loss = 6.331, time = 1.314
+Epoch 0/2, Iter 11950/27097, lr 0.001000, train loss = 26.905, depth loss = 7.188, time = 1.309
+Epoch 0/2, Iter 12000/27097, lr 0.001000, train loss = 6.895, depth loss = 1.789, time = 1.285
+Epoch 0/2, Iter 12050/27097, lr 0.001000, train loss = 70.252, depth loss = 19.776, time = 1.310
+Epoch 0/2, Iter 12100/27097, lr 0.001000, train loss = 36.447, depth loss = 10.208, time = 1.344
+Epoch 0/2, Iter 12150/27097, lr 0.001000, train loss = 4.925, depth loss = 1.217, time = 1.347
+Epoch 0/2, Iter 12200/27097, lr 0.001000, train loss = 3.691, depth loss = 0.891, time = 1.232
+Epoch 0/2, Iter 12250/27097, lr 0.001000, train loss = 23.067, depth loss = 6.294, time = 1.346
+Epoch 0/2, Iter 12300/27097, lr 0.001000, train loss = 30.330, depth loss = 8.443, time = 1.326
+Epoch 0/2, Iter 12350/27097, lr 0.001000, train loss = 266.539, depth loss = 75.427, time = 1.360
+Epoch 0/2, Iter 12400/27097, lr 0.001000, train loss = 22.925, depth loss = 6.065, time = 1.254
+Epoch 0/2, Iter 12450/27097, lr 0.001000, train loss = 2.564, depth loss = 0.563, time = 1.311
+Epoch 0/2, Iter 12500/27097, lr 0.001000, train loss = 55.048, depth loss = 15.240, time = 1.288
+Epoch 0/2, Iter 12550/27097, lr 0.001000, train loss = 227.456, depth loss = 64.535, time = 1.318
+Epoch 0/2, Iter 12600/27097, lr 0.001000, train loss = 38.244, depth loss = 10.577, time = 1.334
+Epoch 0/2, Iter 12650/27097, lr 0.001000, train loss = 18.024, depth loss = 4.984, time = 1.366
+Epoch 0/2, Iter 12700/27097, lr 0.001000, train loss = 5.403, depth loss = 1.359, time = 1.319
+Epoch 0/2, Iter 12750/27097, lr 0.001000, train loss = 23.247, depth loss = 6.542, time = 1.313
+Epoch 0/2, Iter 12800/27097, lr 0.001000, train loss = 15.466, depth loss = 4.367, time = 1.317
+Epoch 0/2, Iter 12850/27097, lr 0.001000, train loss = 7.958, depth loss = 2.078, time = 1.278
+Epoch 0/2, Iter 12900/27097, lr 0.001000, train loss = 10.169, depth loss = 2.746, time = 1.272
+Epoch 0/2, Iter 12950/27097, lr 0.001000, train loss = 205.164, depth loss = 58.281, time = 1.347
+Epoch 0/2, Iter 13000/27097, lr 0.001000, train loss = 18.799, depth loss = 5.144, time = 1.305
+Epoch 0/2, Iter 13050/27097, lr 0.001000, train loss = 24.555, depth loss = 6.898, time = 1.309
+Epoch 0/2, Iter 13100/27097, lr 0.001000, train loss = 34.039, depth loss = 9.570, time = 1.368
+Epoch 0/2, Iter 13150/27097, lr 0.001000, train loss = 54.859, depth loss = 15.212, time = 1.352
+Epoch 0/2, Iter 13200/27097, lr 0.001000, train loss = 16.783, depth loss = 4.430, time = 1.287
+Epoch 0/2, Iter 13250/27097, lr 0.001000, train loss = 7.176, depth loss = 1.892, time = 1.292
+Epoch 0/2, Iter 13300/27097, lr 0.001000, train loss = 93.229, depth loss = 26.527, time = 1.319
+Epoch 0/2, Iter 13350/27097, lr 0.001000, train loss = 5.802, depth loss = 1.425, time = 1.309
+Epoch 0/2, Iter 13400/27097, lr 0.001000, train loss = 12.098, depth loss = 3.096, time = 1.298
+Epoch 0/2, Iter 13450/27097, lr 0.001000, train loss = 15.752, depth loss = 4.295, time = 1.330
+Epoch 0/2, Iter 13500/27097, lr 0.001000, train loss = 4.352, depth loss = 1.037, time = 1.260
+Epoch 0/2, Iter 13550/27097, lr 0.001000, train loss = 4.598, depth loss = 1.115, time = 1.336
+Epoch 0/2, Iter 13600/27097, lr 0.001000, train loss = 2.712, depth loss = 0.636, time = 1.252
+Epoch 0/2, Iter 13650/27097, lr 0.001000, train loss = 25.705, depth loss = 7.255, time = 1.231
+Epoch 0/2, Iter 13700/27097, lr 0.001000, train loss = 5.002, depth loss = 1.274, time = 1.324
+Epoch 0/2, Iter 13750/27097, lr 0.001000, train loss = 17.177, depth loss = 4.603, time = 1.307
+Epoch 0/2, Iter 13800/27097, lr 0.001000, train loss = 66.705, depth loss = 18.510, time = 1.198
+Epoch 0/2, Iter 13850/27097, lr 0.001000, train loss = 32.455, depth loss = 8.995, time = 1.302
+Epoch 0/2, Iter 13900/27097, lr 0.001000, train loss = 5.595, depth loss = 1.330, time = 1.323
+Epoch 0/2, Iter 13950/27097, lr 0.001000, train loss = 44.486, depth loss = 12.807, time = 1.232
+Epoch 0/2, Iter 14000/27097, lr 0.001000, train loss = 11.759, depth loss = 3.093, time = 1.324
+Epoch 0/2, Iter 14050/27097, lr 0.001000, train loss = 3.027, depth loss = 0.751, time = 1.315
+Epoch 0/2, Iter 14100/27097, lr 0.001000, train loss = 81.127, depth loss = 23.007, time = 1.353
+Epoch 0/2, Iter 14150/27097, lr 0.001000, train loss = 20.622, depth loss = 5.675, time = 1.249
+Epoch 0/2, Iter 14200/27097, lr 0.001000, train loss = 43.893, depth loss = 12.399, time = 1.284
+Epoch 0/2, Iter 14250/27097, lr 0.001000, train loss = 31.881, depth loss = 8.848, time = 1.321
+Epoch 0/2, Iter 14300/27097, lr 0.001000, train loss = 9.202, depth loss = 2.322, time = 1.293
+Epoch 0/2, Iter 14350/27097, lr 0.001000, train loss = 32.801, depth loss = 8.803, time = 1.342
+Epoch 0/2, Iter 14400/27097, lr 0.001000, train loss = 20.498, depth loss = 5.787, time = 1.330
+Epoch 0/2, Iter 14450/27097, lr 0.001000, train loss = 45.617, depth loss = 12.185, time = 1.311
+Epoch 0/2, Iter 14500/27097, lr 0.001000, train loss = 65.726, depth loss = 18.727, time = 1.170
+Epoch 0/2, Iter 14550/27097, lr 0.001000, train loss = 42.767, depth loss = 12.141, time = 1.234
+Epoch 0/2, Iter 14600/27097, lr 0.001000, train loss = 11.635, depth loss = 2.656, time = 1.309
+Epoch 0/2, Iter 14650/27097, lr 0.001000, train loss = 20.124, depth loss = 5.403, time = 1.307
+Epoch 0/2, Iter 14700/27097, lr 0.001000, train loss = 21.581, depth loss = 5.948, time = 1.326
+Epoch 0/2, Iter 14750/27097, lr 0.001000, train loss = 9.929, depth loss = 2.659, time = 1.279
+Epoch 0/2, Iter 14800/27097, lr 0.001000, train loss = 68.442, depth loss = 19.292, time = 1.307
+Epoch 0/2, Iter 14850/27097, lr 0.001000, train loss = 121.384, depth loss = 34.604, time = 1.354
+Epoch 0/2, Iter 14900/27097, lr 0.001000, train loss = 7.088, depth loss = 1.878, time = 1.315
+Epoch 0/2, Iter 14950/27097, lr 0.001000, train loss = 14.748, depth loss = 4.011, time = 1.277
+Epoch 0/2, Iter 15000/27097, lr 0.001000, train loss = 3.615, depth loss = 0.810, time = 1.292
+Epoch 0/2, Iter 15050/27097, lr 0.001000, train loss = 10.967, depth loss = 2.843, time = 1.321
+Epoch 0/2, Iter 15100/27097, lr 0.001000, train loss = 146.294, depth loss = 41.655, time = 1.343
+Epoch 0/2, Iter 15150/27097, lr 0.001000, train loss = 21.008, depth loss = 5.848, time = 1.220
+Epoch 0/2, Iter 15200/27097, lr 0.001000, train loss = 39.062, depth loss = 10.925, time = 1.308
+Epoch 0/2, Iter 15250/27097, lr 0.001000, train loss = 8.672, depth loss = 2.301, time = 1.268
+Epoch 0/2, Iter 15300/27097, lr 0.001000, train loss = 5.663, depth loss = 1.514, time = 1.315
+Epoch 0/2, Iter 15350/27097, lr 0.001000, train loss = 42.478, depth loss = 11.789, time = 1.274
+Epoch 0/2, Iter 15400/27097, lr 0.001000, train loss = 22.707, depth loss = 6.210, time = 1.272
+Epoch 0/2, Iter 15450/27097, lr 0.001000, train loss = 5.732, depth loss = 1.408, time = 1.305
+Epoch 0/2, Iter 15500/27097, lr 0.001000, train loss = 9.182, depth loss = 2.318, time = 1.330
+Epoch 0/2, Iter 15550/27097, lr 0.001000, train loss = 8.658, depth loss = 2.267, time = 1.372
+Epoch 0/2, Iter 15600/27097, lr 0.001000, train loss = 8.093, depth loss = 2.032, time = 1.317
+Epoch 0/2, Iter 15650/27097, lr 0.001000, train loss = 18.780, depth loss = 4.954, time = 1.368
+Epoch 0/2, Iter 15700/27097, lr 0.001000, train loss = 10.015, depth loss = 2.431, time = 1.316
+Epoch 0/2, Iter 15750/27097, lr 0.001000, train loss = 5.003, depth loss = 1.318, time = 1.360
+Epoch 0/2, Iter 15800/27097, lr 0.001000, train loss = 38.944, depth loss = 10.165, time = 1.257
+Epoch 0/2, Iter 15850/27097, lr 0.001000, train loss = 10.588, depth loss = 2.842, time = 1.284
+Epoch 0/2, Iter 15900/27097, lr 0.001000, train loss = 5.427, depth loss = 1.425, time = 1.267
+Epoch 0/2, Iter 15950/27097, lr 0.001000, train loss = 19.551, depth loss = 5.399, time = 1.316
+Epoch 0/2, Iter 16000/27097, lr 0.001000, train loss = 29.490, depth loss = 8.070, time = 1.334
+Epoch 0/2, Iter 16050/27097, lr 0.001000, train loss = 7.044, depth loss = 1.795, time = 1.307
+Epoch 0/2, Iter 16100/27097, lr 0.001000, train loss = 12.654, depth loss = 3.575, time = 1.297
+Epoch 0/2, Iter 16150/27097, lr 0.001000, train loss = 28.666, depth loss = 8.106, time = 1.365
+Epoch 0/2, Iter 16200/27097, lr 0.001000, train loss = 19.984, depth loss = 5.352, time = 1.196
+Epoch 0/2, Iter 16250/27097, lr 0.001000, train loss = 6.909, depth loss = 1.808, time = 1.264
+Epoch 0/2, Iter 16300/27097, lr 0.001000, train loss = 7.854, depth loss = 2.127, time = 1.306
+Epoch 0/2, Iter 16350/27097, lr 0.001000, train loss = 4.979, depth loss = 1.315, time = 1.292
+Epoch 0/2, Iter 16400/27097, lr 0.001000, train loss = 4.738, depth loss = 1.171, time = 1.270
+Epoch 0/2, Iter 16450/27097, lr 0.001000, train loss = 12.859, depth loss = 3.427, time = 1.318
+Epoch 0/2, Iter 16500/27097, lr 0.001000, train loss = 36.699, depth loss = 8.932, time = 1.304
+Epoch 0/2, Iter 16550/27097, lr 0.001000, train loss = 151.143, depth loss = 43.266, time = 1.381
+Epoch 0/2, Iter 16600/27097, lr 0.001000, train loss = 38.419, depth loss = 9.774, time = 1.314
+Epoch 0/2, Iter 16650/27097, lr 0.001000, train loss = 68.932, depth loss = 19.398, time = 1.337
+Epoch 0/2, Iter 16700/27097, lr 0.001000, train loss = 7.354, depth loss = 2.026, time = 1.280
+Epoch 0/2, Iter 16750/27097, lr 0.001000, train loss = 8.371, depth loss = 2.266, time = 1.232
+Epoch 0/2, Iter 16800/27097, lr 0.001000, train loss = 21.592, depth loss = 6.039, time = 1.242
+Epoch 0/2, Iter 16850/27097, lr 0.001000, train loss = 10.542, depth loss = 2.663, time = 1.344
+Epoch 0/2, Iter 16900/27097, lr 0.001000, train loss = 23.937, depth loss = 6.672, time = 1.291
+Epoch 0/2, Iter 16950/27097, lr 0.001000, train loss = 16.775, depth loss = 4.718, time = 1.337
+Epoch 0/2, Iter 17000/27097, lr 0.001000, train loss = 22.554, depth loss = 6.247, time = 1.350
+Epoch 0/2, Iter 17050/27097, lr 0.001000, train loss = 1.665, depth loss = 0.343, time = 1.330
+Epoch 0/2, Iter 17100/27097, lr 0.001000, train loss = 4.145, depth loss = 0.993, time = 1.300
+Epoch 0/2, Iter 17150/27097, lr 0.001000, train loss = 5.402, depth loss = 1.434, time = 1.296
+Epoch 0/2, Iter 17200/27097, lr 0.001000, train loss = 3.325, depth loss = 0.797, time = 1.320
+Epoch 0/2, Iter 17250/27097, lr 0.001000, train loss = 6.412, depth loss = 1.704, time = 1.305
+Epoch 0/2, Iter 17300/27097, lr 0.001000, train loss = 20.718, depth loss = 5.725, time = 1.303
+Epoch 0/2, Iter 17350/27097, lr 0.001000, train loss = 13.118, depth loss = 3.548, time = 1.266
+Epoch 0/2, Iter 17400/27097, lr 0.001000, train loss = 20.792, depth loss = 5.661, time = 1.345
+Epoch 0/2, Iter 17450/27097, lr 0.001000, train loss = 89.437, depth loss = 25.116, time = 1.330
+Epoch 0/2, Iter 17500/27097, lr 0.001000, train loss = 11.498, depth loss = 3.056, time = 1.303
+Epoch 0/2, Iter 17550/27097, lr 0.001000, train loss = 19.299, depth loss = 4.973, time = 1.223
+Epoch 0/2, Iter 17600/27097, lr 0.001000, train loss = 14.380, depth loss = 4.085, time = 1.314
+Epoch 0/2, Iter 17650/27097, lr 0.001000, train loss = 7.610, depth loss = 1.847, time = 1.375
+Epoch 0/2, Iter 17700/27097, lr 0.001000, train loss = 9.230, depth loss = 2.470, time = 1.259
+Epoch 0/2, Iter 17750/27097, lr 0.001000, train loss = 5.493, depth loss = 1.302, time = 1.329
+Epoch 0/2, Iter 17800/27097, lr 0.001000, train loss = 5.284, depth loss = 1.340, time = 1.324
+Epoch 0/2, Iter 17850/27097, lr 0.001000, train loss = 12.563, depth loss = 2.803, time = 1.274
+Epoch 0/2, Iter 17900/27097, lr 0.001000, train loss = 48.337, depth loss = 13.042, time = 1.245
+Epoch 0/2, Iter 17950/27097, lr 0.001000, train loss = 51.534, depth loss = 12.777, time = 1.356
+Epoch 0/2, Iter 18000/27097, lr 0.001000, train loss = 4.175, depth loss = 1.026, time = 1.272
+Epoch 0/2, Iter 18050/27097, lr 0.001000, train loss = 5.258, depth loss = 1.313, time = 1.320
+Epoch 0/2, Iter 18100/27097, lr 0.001000, train loss = 10.203, depth loss = 2.744, time = 1.283
+Epoch 0/2, Iter 18150/27097, lr 0.001000, train loss = 10.624, depth loss = 2.723, time = 1.366
+Epoch 0/2, Iter 18200/27097, lr 0.001000, train loss = 39.248, depth loss = 10.887, time = 1.340
+Epoch 0/2, Iter 18250/27097, lr 0.001000, train loss = 24.017, depth loss = 6.534, time = 1.333
+Epoch 0/2, Iter 18300/27097, lr 0.001000, train loss = 3.548, depth loss = 0.826, time = 1.306
+Epoch 0/2, Iter 18350/27097, lr 0.001000, train loss = 6.015, depth loss = 1.409, time = 1.296
+Epoch 0/2, Iter 18400/27097, lr 0.001000, train loss = 17.572, depth loss = 4.364, time = 1.302
+Epoch 0/2, Iter 18450/27097, lr 0.001000, train loss = 77.938, depth loss = 22.170, time = 1.182
+Epoch 0/2, Iter 18500/27097, lr 0.001000, train loss = 10.735, depth loss = 2.871, time = 1.265
+Epoch 0/2, Iter 18550/27097, lr 0.001000, train loss = 5.988, depth loss = 1.496, time = 1.294
+Epoch 0/2, Iter 18600/27097, lr 0.001000, train loss = 18.773, depth loss = 5.144, time = 1.306
+Epoch 0/2, Iter 18650/27097, lr 0.001000, train loss = 2.390, depth loss = 0.542, time = 1.301
+Epoch 0/2, Iter 18700/27097, lr 0.001000, train loss = 29.081, depth loss = 6.449, time = 1.285
+Epoch 0/2, Iter 18750/27097, lr 0.001000, train loss = 6.218, depth loss = 1.577, time = 1.334
+Epoch 0/2, Iter 18800/27097, lr 0.001000, train loss = 32.821, depth loss = 8.376, time = 1.264
+Epoch 0/2, Iter 18850/27097, lr 0.001000, train loss = 13.421, depth loss = 3.320, time = 1.307
+Epoch 0/2, Iter 18900/27097, lr 0.001000, train loss = 77.993, depth loss = 21.715, time = 1.263
+Epoch 0/2, Iter 18950/27097, lr 0.001000, train loss = 8.857, depth loss = 2.318, time = 1.321
+Epoch 0/2, Iter 19000/27097, lr 0.001000, train loss = 79.177, depth loss = 21.841, time = 1.178
+Epoch 0/2, Iter 19050/27097, lr 0.001000, train loss = 8.537, depth loss = 2.212, time = 1.288
+Epoch 0/2, Iter 19100/27097, lr 0.001000, train loss = 19.573, depth loss = 5.306, time = 1.334
+Epoch 0/2, Iter 19150/27097, lr 0.001000, train loss = 16.025, depth loss = 4.404, time = 1.329
+Epoch 0/2, Iter 19200/27097, lr 0.001000, train loss = 16.457, depth loss = 4.583, time = 1.340
+Epoch 0/2, Iter 19250/27097, lr 0.001000, train loss = 26.310, depth loss = 6.444, time = 1.233
+Epoch 0/2, Iter 19300/27097, lr 0.001000, train loss = 13.570, depth loss = 3.589, time = 1.354
+Epoch 0/2, Iter 19350/27097, lr 0.001000, train loss = 15.435, depth loss = 4.231, time = 1.345
+Epoch 0/2, Iter 19400/27097, lr 0.001000, train loss = 49.680, depth loss = 14.014, time = 1.402
+Epoch 0/2, Iter 19450/27097, lr 0.001000, train loss = 22.433, depth loss = 6.193, time = 1.262
+Epoch 0/2, Iter 19500/27097, lr 0.001000, train loss = 35.556, depth loss = 9.038, time = 1.300
+Epoch 0/2, Iter 19550/27097, lr 0.001000, train loss = 6.669, depth loss = 1.717, time = 1.335
+Epoch 0/2, Iter 19600/27097, lr 0.001000, train loss = 11.811, depth loss = 3.156, time = 1.299
+Epoch 0/2, Iter 19650/27097, lr 0.001000, train loss = 46.674, depth loss = 13.345, time = 1.253
+Epoch 0/2, Iter 19700/27097, lr 0.001000, train loss = 79.885, depth loss = 22.362, time = 1.308
+Epoch 0/2, Iter 19750/27097, lr 0.001000, train loss = 7.660, depth loss = 2.049, time = 1.297
+Epoch 0/2, Iter 19800/27097, lr 0.001000, train loss = 7.194, depth loss = 1.809, time = 1.248
+Epoch 0/2, Iter 19850/27097, lr 0.001000, train loss = 3.638, depth loss = 0.835, time = 1.308
+Epoch 0/2, Iter 19900/27097, lr 0.001000, train loss = 13.654, depth loss = 3.558, time = 1.301
+Epoch 0/2, Iter 19950/27097, lr 0.001000, train loss = 23.389, depth loss = 6.401, time = 1.244
+Epoch 0/2, Iter 20000/27097, lr 0.001000, train loss = 22.689, depth loss = 6.236, time = 1.276
+Epoch 0/2, Iter 20050/27097, lr 0.001000, train loss = 22.983, depth loss = 6.478, time = 1.201
+Epoch 0/2, Iter 20100/27097, lr 0.001000, train loss = 54.016, depth loss = 15.228, time = 1.325
+Epoch 0/2, Iter 20150/27097, lr 0.001000, train loss = 12.759, depth loss = 3.470, time = 1.258
+Epoch 0/2, Iter 20200/27097, lr 0.001000, train loss = 13.769, depth loss = 3.871, time = 1.253
+Epoch 0/2, Iter 20250/27097, lr 0.001000, train loss = 11.056, depth loss = 2.932, time = 1.330
+Epoch 0/2, Iter 20300/27097, lr 0.001000, train loss = 7.590, depth loss = 2.011, time = 1.299
+Epoch 0/2, Iter 20350/27097, lr 0.001000, train loss = 15.695, depth loss = 4.167, time = 1.323
+Epoch 0/2, Iter 20400/27097, lr 0.001000, train loss = 12.631, depth loss = 3.369, time = 1.258
+Epoch 0/2, Iter 20450/27097, lr 0.001000, train loss = 9.422, depth loss = 2.612, time = 1.340
+Epoch 0/2, Iter 20500/27097, lr 0.001000, train loss = 9.295, depth loss = 2.489, time = 1.349
+Epoch 0/2, Iter 20550/27097, lr 0.001000, train loss = 18.860, depth loss = 5.239, time = 1.341
+Epoch 0/2, Iter 20600/27097, lr 0.001000, train loss = 75.169, depth loss = 20.318, time = 1.321
+Epoch 0/2, Iter 20650/27097, lr 0.001000, train loss = 22.164, depth loss = 5.787, time = 1.337
+Epoch 0/2, Iter 20700/27097, lr 0.001000, train loss = 44.186, depth loss = 11.339, time = 1.288
+Epoch 0/2, Iter 20750/27097, lr 0.001000, train loss = 11.110, depth loss = 2.988, time = 1.252
+Epoch 0/2, Iter 20800/27097, lr 0.001000, train loss = 5.578, depth loss = 1.420, time = 1.300
+Epoch 0/2, Iter 20850/27097, lr 0.001000, train loss = 13.714, depth loss = 3.636, time = 1.346
+Epoch 0/2, Iter 20900/27097, lr 0.001000, train loss = 7.390, depth loss = 1.819, time = 1.346
+Epoch 0/2, Iter 20950/27097, lr 0.001000, train loss = 4.406, depth loss = 1.079, time = 1.273
+Epoch 0/2, Iter 21000/27097, lr 0.001000, train loss = 16.817, depth loss = 4.527, time = 1.340
+Epoch 0/2, Iter 21050/27097, lr 0.001000, train loss = 29.601, depth loss = 6.087, time = 1.281
+Epoch 0/2, Iter 21100/27097, lr 0.001000, train loss = 13.179, depth loss = 3.570, time = 1.293
+Epoch 0/2, Iter 21150/27097, lr 0.001000, train loss = 12.691, depth loss = 3.294, time = 1.337
+Epoch 0/2, Iter 21200/27097, lr 0.001000, train loss = 80.724, depth loss = 22.962, time = 1.297
+Epoch 0/2, Iter 21250/27097, lr 0.001000, train loss = 10.750, depth loss = 2.798, time = 1.190
+Epoch 0/2, Iter 21300/27097, lr 0.001000, train loss = 2.458, depth loss = 0.555, time = 1.263
+Epoch 0/2, Iter 21350/27097, lr 0.001000, train loss = 17.028, depth loss = 4.712, time = 1.307
+Epoch 0/2, Iter 21400/27097, lr 0.001000, train loss = 57.338, depth loss = 16.282, time = 1.204
+Epoch 0/2, Iter 21450/27097, lr 0.001000, train loss = 8.285, depth loss = 2.106, time = 1.278
+Epoch 0/2, Iter 21500/27097, lr 0.001000, train loss = 3.676, depth loss = 0.983, time = 1.257
+Epoch 0/2, Iter 21550/27097, lr 0.001000, train loss = 5.496, depth loss = 1.354, time = 1.300
+Epoch 0/2, Iter 21600/27097, lr 0.001000, train loss = 94.772, depth loss = 26.476, time = 1.327
+Epoch 0/2, Iter 21650/27097, lr 0.001000, train loss = 14.062, depth loss = 3.820, time = 1.303
+Epoch 0/2, Iter 21700/27097, lr 0.001000, train loss = 112.455, depth loss = 32.214, time = 1.298
+Epoch 0/2, Iter 21750/27097, lr 0.001000, train loss = 15.779, depth loss = 4.223, time = 1.342
+Epoch 0/2, Iter 21800/27097, lr 0.001000, train loss = 24.014, depth loss = 6.702, time = 1.293
+Epoch 0/2, Iter 21850/27097, lr 0.001000, train loss = 42.832, depth loss = 11.979, time = 1.353
+Epoch 0/2, Iter 21900/27097, lr 0.001000, train loss = 11.713, depth loss = 3.191, time = 1.239
+Epoch 0/2, Iter 21950/27097, lr 0.001000, train loss = 6.855, depth loss = 1.783, time = 1.276
+Epoch 0/2, Iter 22000/27097, lr 0.001000, train loss = 41.989, depth loss = 11.673, time = 1.313
+Epoch 0/2, Iter 22050/27097, lr 0.001000, train loss = 1.850, depth loss = 0.435, time = 1.289
+Epoch 0/2, Iter 22100/27097, lr 0.001000, train loss = 7.715, depth loss = 1.950, time = 1.375
+Epoch 0/2, Iter 22150/27097, lr 0.001000, train loss = 18.875, depth loss = 5.130, time = 1.330
+Epoch 0/2, Iter 22200/27097, lr 0.001000, train loss = 34.313, depth loss = 9.608, time = 1.230
+Epoch 0/2, Iter 22250/27097, lr 0.001000, train loss = 47.703, depth loss = 12.986, time = 1.286
+Epoch 0/2, Iter 22300/27097, lr 0.001000, train loss = 59.516, depth loss = 15.583, time = 1.324
+Epoch 0/2, Iter 22350/27097, lr 0.001000, train loss = 14.436, depth loss = 3.900, time = 1.273
+Epoch 0/2, Iter 22400/27097, lr 0.001000, train loss = 17.144, depth loss = 4.734, time = 1.324
+Epoch 0/2, Iter 22450/27097, lr 0.001000, train loss = 87.589, depth loss = 23.315, time = 1.312
+Epoch 0/2, Iter 22500/27097, lr 0.001000, train loss = 9.880, depth loss = 2.743, time = 1.255
+Epoch 0/2, Iter 22550/27097, lr 0.001000, train loss = 56.125, depth loss = 15.817, time = 1.340
+Epoch 0/2, Iter 22600/27097, lr 0.001000, train loss = 8.421, depth loss = 2.148, time = 1.283
+Epoch 0/2, Iter 22650/27097, lr 0.001000, train loss = 30.764, depth loss = 8.560, time = 1.330
+Epoch 0/2, Iter 22700/27097, lr 0.001000, train loss = 53.237, depth loss = 12.207, time = 1.294
+Epoch 0/2, Iter 22750/27097, lr 0.001000, train loss = 7.015, depth loss = 1.828, time = 1.315
+Epoch 0/2, Iter 22800/27097, lr 0.001000, train loss = 23.207, depth loss = 6.466, time = 1.300
+Epoch 0/2, Iter 22850/27097, lr 0.001000, train loss = 37.544, depth loss = 9.812, time = 1.271
+Epoch 0/2, Iter 22900/27097, lr 0.001000, train loss = 22.097, depth loss = 5.871, time = 1.318
+Epoch 0/2, Iter 22950/27097, lr 0.001000, train loss = 9.290, depth loss = 2.459, time = 1.368
+Epoch 0/2, Iter 23000/27097, lr 0.001000, train loss = 24.560, depth loss = 7.119, time = 1.232
+Epoch 0/2, Iter 23050/27097, lr 0.001000, train loss = 7.751, depth loss = 2.067, time = 1.323
+Epoch 0/2, Iter 23100/27097, lr 0.001000, train loss = 18.878, depth loss = 5.003, time = 1.316
+Epoch 0/2, Iter 23150/27097, lr 0.001000, train loss = 8.781, depth loss = 2.453, time = 1.239
+Epoch 0/2, Iter 23200/27097, lr 0.001000, train loss = 31.843, depth loss = 8.787, time = 1.322
+Epoch 0/2, Iter 23250/27097, lr 0.001000, train loss = 39.024, depth loss = 10.997, time = 1.239
+Epoch 0/2, Iter 23300/27097, lr 0.001000, train loss = 16.128, depth loss = 4.098, time = 1.325
+Epoch 0/2, Iter 23350/27097, lr 0.001000, train loss = 11.637, depth loss = 3.171, time = 1.284
+Epoch 0/2, Iter 23400/27097, lr 0.001000, train loss = 7.072, depth loss = 1.958, time = 1.287
+Epoch 0/2, Iter 23450/27097, lr 0.001000, train loss = 17.509, depth loss = 4.936, time = 1.247
+Epoch 0/2, Iter 23500/27097, lr 0.001000, train loss = 11.720, depth loss = 3.066, time = 1.292
+Epoch 0/2, Iter 23550/27097, lr 0.001000, train loss = 25.524, depth loss = 7.039, time = 1.223
+Epoch 0/2, Iter 23600/27097, lr 0.001000, train loss = 5.539, depth loss = 1.425, time = 1.296
+Epoch 0/2, Iter 23650/27097, lr 0.001000, train loss = 16.427, depth loss = 4.523, time = 1.295
+Epoch 0/2, Iter 23700/27097, lr 0.001000, train loss = 5.365, depth loss = 1.282, time = 1.318
+Epoch 0/2, Iter 23750/27097, lr 0.001000, train loss = 16.378, depth loss = 3.984, time = 1.253
+Epoch 0/2, Iter 23800/27097, lr 0.001000, train loss = 5.738, depth loss = 1.519, time = 1.264
+Epoch 0/2, Iter 23850/27097, lr 0.001000, train loss = 18.564, depth loss = 5.025, time = 1.339
+Epoch 0/2, Iter 23900/27097, lr 0.001000, train loss = 17.150, depth loss = 4.748, time = 1.284
+Epoch 0/2, Iter 23950/27097, lr 0.001000, train loss = 8.938, depth loss = 2.400, time = 1.306
+Epoch 0/2, Iter 24000/27097, lr 0.001000, train loss = 8.109, depth loss = 2.088, time = 1.310
+Epoch 0/2, Iter 24050/27097, lr 0.001000, train loss = 12.273, depth loss = 3.263, time = 1.334
+Epoch 0/2, Iter 24100/27097, lr 0.001000, train loss = 2.608, depth loss = 0.648, time = 1.355
+Epoch 0/2, Iter 24150/27097, lr 0.001000, train loss = 5.685, depth loss = 1.554, time = 1.289
+Epoch 0/2, Iter 24200/27097, lr 0.001000, train loss = 10.604, depth loss = 2.829, time = 1.343
+Epoch 0/2, Iter 24250/27097, lr 0.001000, train loss = 35.873, depth loss = 9.969, time = 1.316
+Epoch 0/2, Iter 24300/27097, lr 0.001000, train loss = 9.733, depth loss = 2.602, time = 1.292
+Epoch 0/2, Iter 24350/27097, lr 0.001000, train loss = 5.264, depth loss = 1.240, time = 1.350
+Epoch 0/2, Iter 24400/27097, lr 0.001000, train loss = 8.448, depth loss = 2.204, time = 1.309
+Epoch 0/2, Iter 24450/27097, lr 0.001000, train loss = 9.434, depth loss = 2.436, time = 1.290
+Epoch 0/2, Iter 24500/27097, lr 0.001000, train loss = 8.263, depth loss = 2.191, time = 1.368
+Epoch 0/2, Iter 24550/27097, lr 0.001000, train loss = 6.796, depth loss = 1.788, time = 1.358
+Epoch 0/2, Iter 24600/27097, lr 0.001000, train loss = 20.592, depth loss = 5.381, time = 1.319
+Epoch 0/2, Iter 24650/27097, lr 0.001000, train loss = 5.991, depth loss = 1.504, time = 1.286
+Epoch 0/2, Iter 24700/27097, lr 0.001000, train loss = 8.353, depth loss = 2.307, time = 1.327
+Epoch 0/2, Iter 24750/27097, lr 0.001000, train loss = 3.514, depth loss = 0.858, time = 1.286
+Epoch 0/2, Iter 24800/27097, lr 0.001000, train loss = 85.393, depth loss = 24.226, time = 1.340
+Epoch 0/2, Iter 24850/27097, lr 0.001000, train loss = 9.933, depth loss = 2.703, time = 1.298
+Epoch 0/2, Iter 24900/27097, lr 0.001000, train loss = 18.200, depth loss = 4.972, time = 1.332
+Epoch 0/2, Iter 24950/27097, lr 0.001000, train loss = 7.973, depth loss = 2.101, time = 1.292
+Epoch 0/2, Iter 25000/27097, lr 0.001000, train loss = 12.936, depth loss = 3.478, time = 1.349
+Epoch 0/2, Iter 25050/27097, lr 0.001000, train loss = 10.796, depth loss = 2.920, time = 1.264
+Epoch 0/2, Iter 25100/27097, lr 0.001000, train loss = 18.560, depth loss = 5.020, time = 1.386
+Epoch 0/2, Iter 25150/27097, lr 0.001000, train loss = 43.521, depth loss = 11.053, time = 1.233
+Epoch 0/2, Iter 25200/27097, lr 0.001000, train loss = 5.688, depth loss = 1.525, time = 1.265
+Epoch 0/2, Iter 25250/27097, lr 0.001000, train loss = 8.422, depth loss = 2.085, time = 1.364
+Epoch 0/2, Iter 25300/27097, lr 0.001000, train loss = 3.406, depth loss = 0.861, time = 1.267
+Epoch 0/2, Iter 25350/27097, lr 0.001000, train loss = 7.147, depth loss = 1.866, time = 1.327
+Epoch 0/2, Iter 25400/27097, lr 0.001000, train loss = 4.821, depth loss = 1.225, time = 1.356
+Epoch 0/2, Iter 25450/27097, lr 0.001000, train loss = 4.506, depth loss = 1.117, time = 1.253
+Epoch 0/2, Iter 25500/27097, lr 0.001000, train loss = 2.759, depth loss = 0.602, time = 1.248
+Epoch 0/2, Iter 25550/27097, lr 0.001000, train loss = 6.383, depth loss = 1.663, time = 1.282
+Epoch 0/2, Iter 25600/27097, lr 0.001000, train loss = 18.754, depth loss = 4.978, time = 1.275
+Epoch 0/2, Iter 25650/27097, lr 0.001000, train loss = 13.935, depth loss = 3.709, time = 1.302
+Epoch 0/2, Iter 25700/27097, lr 0.001000, train loss = 7.117, depth loss = 1.835, time = 1.300
+Epoch 0/2, Iter 25750/27097, lr 0.001000, train loss = 35.785, depth loss = 10.057, time = 1.222
+Epoch 0/2, Iter 25800/27097, lr 0.001000, train loss = 9.519, depth loss = 2.498, time = 1.320
+Epoch 0/2, Iter 25850/27097, lr 0.001000, train loss = 12.220, depth loss = 3.282, time = 1.270
+Epoch 0/2, Iter 25900/27097, lr 0.001000, train loss = 72.506, depth loss = 17.993, time = 1.216
+Epoch 0/2, Iter 25950/27097, lr 0.001000, train loss = 4.396, depth loss = 1.130, time = 1.346
+Epoch 0/2, Iter 26000/27097, lr 0.001000, train loss = 27.880, depth loss = 8.609, time = 1.344
+Epoch 0/2, Iter 26050/27097, lr 0.001000, train loss = 13.645, depth loss = 3.476, time = 1.272
+Epoch 0/2, Iter 26100/27097, lr 0.001000, train loss = 13.605, depth loss = 3.673, time = 1.306
+Epoch 0/2, Iter 26150/27097, lr 0.001000, train loss = 7.620, depth loss = 2.000, time = 1.329
+Epoch 0/2, Iter 26200/27097, lr 0.001000, train loss = 183.783, depth loss = 52.174, time = 1.353
+Epoch 0/2, Iter 26250/27097, lr 0.001000, train loss = 14.221, depth loss = 3.811, time = 1.284
+Epoch 0/2, Iter 26300/27097, lr 0.001000, train loss = 6.343, depth loss = 1.694, time = 1.292
+Epoch 0/2, Iter 26350/27097, lr 0.001000, train loss = 10.141, depth loss = 2.670, time = 1.324
+Epoch 0/2, Iter 26400/27097, lr 0.001000, train loss = 2.843, depth loss = 0.654, time = 1.383
+Epoch 0/2, Iter 26450/27097, lr 0.001000, train loss = 17.991, depth loss = 4.891, time = 1.349
+Epoch 0/2, Iter 26500/27097, lr 0.001000, train loss = 22.533, depth loss = 5.395, time = 1.238
+Epoch 0/2, Iter 26550/27097, lr 0.001000, train loss = 12.607, depth loss = 3.445, time = 1.285
+Epoch 0/2, Iter 26600/27097, lr 0.001000, train loss = 7.269, depth loss = 1.874, time = 1.301
+Epoch 0/2, Iter 26650/27097, lr 0.001000, train loss = 3.989, depth loss = 0.987, time = 1.261
+Epoch 0/2, Iter 26700/27097, lr 0.001000, train loss = 11.444, depth loss = 3.091, time = 1.261
+Epoch 0/2, Iter 26750/27097, lr 0.001000, train loss = 8.868, depth loss = 2.483, time = 1.271
+Epoch 0/2, Iter 26800/27097, lr 0.001000, train loss = 30.951, depth loss = 8.452, time = 1.363
+Epoch 0/2, Iter 26850/27097, lr 0.001000, train loss = 1.858, depth loss = 0.417, time = 1.279
+Epoch 0/2, Iter 26900/27097, lr 0.001000, train loss = 14.442, depth loss = 3.873, time = 1.305
+Epoch 0/2, Iter 26950/27097, lr 0.001000, train loss = 18.520, depth loss = 5.084, time = 1.276
+Epoch 0/2, Iter 27000/27097, lr 0.001000, train loss = 43.273, depth loss = 11.929, time = 1.275
+Epoch 0/2, Iter 27050/27097, lr 0.001000, train loss = 1.821, depth loss = 0.443, time = 1.268
+Epoch 0/2, Iter 0/7546, test loss = 10.902, depth loss = 2.949, time = 0.884613
+Epoch 0/2, Iter 50/7546, test loss = 2.105, depth loss = 0.522, time = 0.530756
+Epoch 0/2, Iter 100/7546, test loss = 2.243, depth loss = 0.522, time = 0.578963
+Epoch 0/2, Iter 150/7546, test loss = 1.931, depth loss = 0.458, time = 0.582264
+Epoch 0/2, Iter 200/7546, test loss = 2.333, depth loss = 0.574, time = 0.573012
+Epoch 0/2, Iter 250/7546, test loss = 1.826, depth loss = 0.430, time = 0.644795
+Epoch 0/2, Iter 300/7546, test loss = 1.362, depth loss = 0.302, time = 0.611003
+Epoch 0/2, Iter 350/7546, test loss = 15.103, depth loss = 4.245, time = 0.580148
+Epoch 0/2, Iter 400/7546, test loss = 19.353, depth loss = 5.394, time = 0.568789
+Epoch 0/2, Iter 450/7546, test loss = 17.144, depth loss = 4.831, time = 0.533962
+Epoch 0/2, Iter 500/7546, test loss = 12.362, depth loss = 3.294, time = 0.558779
+Epoch 0/2, Iter 550/7546, test loss = 36.848, depth loss = 9.808, time = 0.576075
+Epoch 0/2, Iter 600/7546, test loss = 14.277, depth loss = 3.951, time = 0.612749
+Epoch 0/2, Iter 650/7546, test loss = 22.416, depth loss = 6.182, time = 0.649981
+Epoch 0/2, Iter 700/7546, test loss = 12.923, depth loss = 3.555, time = 0.625467
+Epoch 0/2, Iter 750/7546, test loss = 6.449, depth loss = 1.648, time = 0.612615
+Epoch 0/2, Iter 800/7546, test loss = 12.459, depth loss = 3.350, time = 0.641463
+Epoch 0/2, Iter 850/7546, test loss = 5.204, depth loss = 1.343, time = 0.628659
+Epoch 0/2, Iter 900/7546, test loss = 4.030, depth loss = 0.972, time = 0.615466
+Epoch 0/2, Iter 950/7546, test loss = 10.360, depth loss = 2.466, time = 0.644441
+Epoch 0/2, Iter 1000/7546, test loss = 3.116, depth loss = 0.741, time = 0.641401
+Epoch 0/2, Iter 1050/7546, test loss = 35.550, depth loss = 10.088, time = 0.583864
+Epoch 0/2, Iter 1100/7546, test loss = 49.147, depth loss = 13.893, time = 0.544634
+Epoch 0/2, Iter 1150/7546, test loss = 30.815, depth loss = 8.280, time = 0.569352
+Epoch 0/2, Iter 1200/7546, test loss = 2.406, depth loss = 0.602, time = 0.624922
+Epoch 0/2, Iter 1250/7546, test loss = 5.491, depth loss = 1.394, time = 0.606003
+Epoch 0/2, Iter 1300/7546, test loss = 31.650, depth loss = 8.241, time = 0.667797
+Epoch 0/2, Iter 1350/7546, test loss = 7.004, depth loss = 1.718, time = 0.583139
+Epoch 0/2, Iter 1400/7546, test loss = 97.002, depth loss = 27.747, time = 0.631079
+Epoch 0/2, Iter 1450/7546, test loss = 14.995, depth loss = 4.196, time = 0.581168
+Epoch 0/2, Iter 1500/7546, test loss = 85.287, depth loss = 24.504, time = 0.602124
+Epoch 0/2, Iter 1550/7546, test loss = 10.053, depth loss = 2.777, time = 0.575914
+Epoch 0/2, Iter 1600/7546, test loss = 8.806, depth loss = 2.380, time = 0.583593
+Epoch 0/2, Iter 1650/7546, test loss = 42.941, depth loss = 12.215, time = 0.639533
+Epoch 0/2, Iter 1700/7546, test loss = 27.402, depth loss = 7.841, time = 0.629591
+Epoch 0/2, Iter 1750/7546, test loss = 13.858, depth loss = 3.818, time = 0.491565
+Epoch 0/2, Iter 1800/7546, test loss = 70.974, depth loss = 20.104, time = 0.531998
+Epoch 0/2, Iter 1850/7546, test loss = 13.109, depth loss = 3.533, time = 0.611302
+Epoch 0/2, Iter 1900/7546, test loss = 83.307, depth loss = 22.236, time = 0.564172
+Epoch 0/2, Iter 1950/7546, test loss = 15.539, depth loss = 4.297, time = 0.602528
+Epoch 0/2, Iter 2000/7546, test loss = 70.054, depth loss = 19.715, time = 0.661146
+Epoch 0/2, Iter 2050/7546, test loss = 41.167, depth loss = 11.513, time = 0.619742
+Epoch 0/2, Iter 2100/7546, test loss = 11.859, depth loss = 3.658, time = 0.617455
+Epoch 0/2, Iter 2150/7546, test loss = 52.214, depth loss = 14.865, time = 0.482165
+Epoch 0/2, Iter 2200/7546, test loss = 6.119, depth loss = 1.534, time = 0.583316
+Epoch 0/2, Iter 2250/7546, test loss = 31.618, depth loss = 8.902, time = 0.580521
+Epoch 0/2, Iter 2300/7546, test loss = 3.492, depth loss = 0.770, time = 0.611441
+Epoch 0/2, Iter 2350/7546, test loss = 4.250, depth loss = 0.894, time = 0.565595
+Epoch 0/2, Iter 2400/7546, test loss = 12.857, depth loss = 3.442, time = 0.593364
+Epoch 0/2, Iter 2450/7546, test loss = 16.685, depth loss = 4.576, time = 0.605969
+Epoch 0/2, Iter 2500/7546, test loss = 5.140, depth loss = 1.278, time = 0.621131
+Epoch 0/2, Iter 2550/7546, test loss = 9.663, depth loss = 2.432, time = 0.616668
+Epoch 0/2, Iter 2600/7546, test loss = 7.194, depth loss = 1.808, time = 0.603583
+Epoch 0/2, Iter 2650/7546, test loss = 7.120, depth loss = 1.846, time = 0.621399
+Epoch 0/2, Iter 2700/7546, test loss = 3.679, depth loss = 0.903, time = 0.622999
+Epoch 0/2, Iter 2750/7546, test loss = 121.609, depth loss = 34.396, time = 0.578175
+Epoch 0/2, Iter 2800/7546, test loss = 23.847, depth loss = 6.612, time = 0.632131
+Epoch 0/2, Iter 2850/7546, test loss = 7.906, depth loss = 1.998, time = 0.648957
+Epoch 0/2, Iter 2900/7546, test loss = 5.050, depth loss = 1.208, time = 0.613915
+Epoch 0/2, Iter 2950/7546, test loss = 8.639, depth loss = 2.127, time = 0.576916
+Epoch 0/2, Iter 3000/7546, test loss = 5.222, depth loss = 1.245, time = 0.631843
+Epoch 0/2, Iter 3050/7546, test loss = 5.864, depth loss = 1.431, time = 0.617548
+Epoch 0/2, Iter 3100/7546, test loss = 28.625, depth loss = 7.868, time = 0.553703
+Epoch 0/2, Iter 3150/7546, test loss = 7.113, depth loss = 1.806, time = 0.657896
+Epoch 0/2, Iter 3200/7546, test loss = 11.400, depth loss = 2.953, time = 0.589667
+Epoch 0/2, Iter 3250/7546, test loss = 8.046, depth loss = 1.993, time = 0.626312
+Epoch 0/2, Iter 3300/7546, test loss = 12.763, depth loss = 3.057, time = 0.529863
+Epoch 0/2, Iter 3350/7546, test loss = 22.781, depth loss = 5.219, time = 0.591669
+Epoch 0/2, Iter 3400/7546, test loss = 4.504, depth loss = 0.990, time = 0.628227
+Epoch 0/2, Iter 3450/7546, test loss = 106.509, depth loss = 30.210, time = 0.532000
+Epoch 0/2, Iter 3500/7546, test loss = 117.519, depth loss = 33.418, time = 0.511838
+Epoch 0/2, Iter 3550/7546, test loss = 45.190, depth loss = 12.482, time = 0.569224
+Epoch 0/2, Iter 3600/7546, test loss = 32.659, depth loss = 8.836, time = 0.578217
+Epoch 0/2, Iter 3650/7546, test loss = 110.771, depth loss = 30.950, time = 0.593895
+Epoch 0/2, Iter 3700/7546, test loss = 35.185, depth loss = 9.147, time = 0.625238
+Epoch 0/2, Iter 3750/7546, test loss = 138.975, depth loss = 38.999, time = 0.624962
+Epoch 0/2, Iter 3800/7546, test loss = 30.669, depth loss = 8.592, time = 0.537389
+Epoch 0/2, Iter 3850/7546, test loss = 38.005, depth loss = 10.624, time = 0.497175
+Epoch 0/2, Iter 3900/7546, test loss = 41.027, depth loss = 11.266, time = 0.562041
+Epoch 0/2, Iter 3950/7546, test loss = 8.392, depth loss = 2.255, time = 0.584532
+Epoch 0/2, Iter 4000/7546, test loss = 10.492, depth loss = 2.860, time = 0.625687
+Epoch 0/2, Iter 4050/7546, test loss = 18.836, depth loss = 5.108, time = 0.601583
+Epoch 0/2, Iter 4100/7546, test loss = 6.077, depth loss = 1.635, time = 0.649951
+Epoch 0/2, Iter 4150/7546, test loss = 108.205, depth loss = 30.830, time = 0.560686
+Epoch 0/2, Iter 4200/7546, test loss = 52.419, depth loss = 14.793, time = 0.540646
+Epoch 0/2, Iter 4250/7546, test loss = 54.838, depth loss = 14.977, time = 0.594066
+Epoch 0/2, Iter 4300/7546, test loss = 59.327, depth loss = 16.717, time = 0.582660
+Epoch 0/2, Iter 4350/7546, test loss = 31.983, depth loss = 9.015, time = 0.615343
+Epoch 0/2, Iter 4400/7546, test loss = 20.530, depth loss = 5.535, time = 0.593208
+Epoch 0/2, Iter 4450/7546, test loss = 26.714, depth loss = 7.579, time = 0.610434
+Epoch 0/2, Iter 4500/7546, test loss = 6.974, depth loss = 1.845, time = 0.531730
+Epoch 0/2, Iter 4550/7546, test loss = 1.823, depth loss = 0.413, time = 0.601187
+Epoch 0/2, Iter 4600/7546, test loss = 20.982, depth loss = 5.094, time = 0.598156
+Epoch 0/2, Iter 4650/7546, test loss = 5.438, depth loss = 1.495, time = 0.540376
+Epoch 0/2, Iter 4700/7546, test loss = 2.672, depth loss = 0.681, time = 0.583466
+Epoch 0/2, Iter 4750/7546, test loss = 7.008, depth loss = 1.866, time = 0.569285
+Epoch 0/2, Iter 4800/7546, test loss = 13.767, depth loss = 3.697, time = 0.628793
+Epoch 0/2, Iter 4850/7546, test loss = 27.043, depth loss = 7.674, time = 0.589605
+Epoch 0/2, Iter 4900/7546, test loss = 91.906, depth loss = 26.094, time = 0.521046
+Epoch 0/2, Iter 4950/7546, test loss = 46.930, depth loss = 13.045, time = 0.559045
+Epoch 0/2, Iter 5000/7546, test loss = 46.672, depth loss = 13.286, time = 0.558614
+Epoch 0/2, Iter 5050/7546, test loss = 35.739, depth loss = 10.302, time = 0.565208
+Epoch 0/2, Iter 5100/7546, test loss = 22.553, depth loss = 6.343, time = 0.572783
+Epoch 0/2, Iter 5150/7546, test loss = 128.777, depth loss = 36.608, time = 0.588305
+Epoch 0/2, Iter 5200/7546, test loss = 33.391, depth loss = 9.267, time = 0.613255
+Epoch 0/2, Iter 5250/7546, test loss = 46.202, depth loss = 12.960, time = 0.636741
+Epoch 0/2, Iter 5300/7546, test loss = 41.878, depth loss = 11.268, time = 0.591401
+Epoch 0/2, Iter 5350/7546, test loss = 39.636, depth loss = 11.173, time = 0.558267
+Epoch 0/2, Iter 5400/7546, test loss = 47.925, depth loss = 12.419, time = 0.613876
+Epoch 0/2, Iter 5450/7546, test loss = 29.055, depth loss = 7.908, time = 0.603166
+Epoch 0/2, Iter 5500/7546, test loss = 67.509, depth loss = 19.139, time = 0.543702
+Epoch 0/2, Iter 5550/7546, test loss = 8.703, depth loss = 2.290, time = 0.560114
+Epoch 0/2, Iter 5600/7546, test loss = 12.517, depth loss = 3.352, time = 0.572777
+Epoch 0/2, Iter 5650/7546, test loss = 11.015, depth loss = 3.065, time = 0.591245
+Epoch 0/2, Iter 5700/7546, test loss = 9.008, depth loss = 2.367, time = 0.649904
+Epoch 0/2, Iter 5750/7546, test loss = 20.373, depth loss = 4.564, time = 0.699429
+Epoch 0/2, Iter 5800/7546, test loss = 3.964, depth loss = 0.959, time = 0.618394
+Epoch 0/2, Iter 5850/7546, test loss = 19.977, depth loss = 5.529, time = 0.625094
+Epoch 0/2, Iter 5900/7546, test loss = 19.347, depth loss = 5.287, time = 0.611397
+Epoch 0/2, Iter 5950/7546, test loss = 34.841, depth loss = 8.722, time = 0.586883
+Epoch 0/2, Iter 6000/7546, test loss = 24.252, depth loss = 6.749, time = 0.605708
+Epoch 0/2, Iter 6050/7546, test loss = 44.269, depth loss = 12.577, time = 0.639896
+Epoch 0/2, Iter 6100/7546, test loss = 114.939, depth loss = 31.666, time = 0.617740
+Epoch 0/2, Iter 6150/7546, test loss = 37.669, depth loss = 10.792, time = 0.630963
+Epoch 0/2, Iter 6200/7546, test loss = 26.750, depth loss = 7.576, time = 0.594531
+Epoch 0/2, Iter 6250/7546, test loss = 66.947, depth loss = 19.136, time = 0.606887
+Epoch 0/2, Iter 6300/7546, test loss = 67.646, depth loss = 17.692, time = 0.524051
+Epoch 0/2, Iter 6350/7546, test loss = 237.915, depth loss = 66.391, time = 0.477704
+Epoch 0/2, Iter 6400/7546, test loss = 274.049, depth loss = 76.715, time = 0.536934
+Epoch 0/2, Iter 6450/7546, test loss = 305.823, depth loss = 85.630, time = 0.615676
+Epoch 0/2, Iter 6500/7546, test loss = 288.070, depth loss = 82.003, time = 0.569639
+Epoch 0/2, Iter 6550/7546, test loss = 70.028, depth loss = 19.823, time = 0.662539
+Epoch 0/2, Iter 6600/7546, test loss = 26.592, depth loss = 7.326, time = 0.654713
+Epoch 0/2, Iter 6650/7546, test loss = 14.611, depth loss = 3.998, time = 0.641727
+Epoch 0/2, Iter 6700/7546, test loss = 11.209, depth loss = 2.957, time = 0.682956
+Epoch 0/2, Iter 6750/7546, test loss = 4.978, depth loss = 1.209, time = 0.666258
+Epoch 0/2, Iter 6800/7546, test loss = 12.672, depth loss = 3.404, time = 0.609700
+Epoch 0/2, Iter 6850/7546, test loss = 4.886, depth loss = 1.169, time = 0.639049
+Epoch 0/2, Iter 6900/7546, test loss = 2.831, depth loss = 0.731, time = 0.650603
+Epoch 0/2, Iter 6950/7546, test loss = 1.303, depth loss = 0.262, time = 0.635847
+Epoch 0/2, Iter 7000/7546, test loss = 2.615, depth loss = 0.689, time = 0.691740
+Epoch 0/2, Iter 7050/7546, test loss = 1.317, depth loss = 0.263, time = 0.619833
+Epoch 0/2, Iter 7100/7546, test loss = 1.290, depth loss = 0.292, time = 0.535018
+Epoch 0/2, Iter 7150/7546, test loss = 1.550, depth loss = 0.350, time = 0.601705
+Epoch 0/2, Iter 7200/7546, test loss = 2.259, depth loss = 0.492, time = 0.646174
+Epoch 0/2, Iter 7250/7546, test loss = 7.363, depth loss = 1.890, time = 0.642681
+Epoch 0/2, Iter 7300/7546, test loss = 5.545, depth loss = 1.408, time = 0.614677
+Epoch 0/2, Iter 7350/7546, test loss = 4.584, depth loss = 1.081, time = 0.676859
+Epoch 0/2, Iter 7400/7546, test loss = 6.719, depth loss = 1.700, time = 0.649765
+Epoch 0/2, Iter 7450/7546, test loss = 3.623, depth loss = 0.840, time = 0.637843
+Epoch 0/2, Iter 7500/7546, test loss = 2.902, depth loss = 0.640, time = 0.619714
+avg_test_scalars: {'loss': 33.580240555563755, 'depth_loss': 9.27112212098035, 'abs_depth_error': 9.632213057781795, 'thres2mm_error': 0.24466544281226763, 'thres4mm_error': 0.17411452656764345, 'thres8mm_error': 0.12999272107763696, 'thres14mm_error': 0.10253241870555822, 'thres20mm_error': 0.0881730974660516, 'thres2mm_abserror': 0.5784501726893383, 'thres4mm_abserror': 2.7810587735129326, 'thres8mm_abserror': 5.622493722474831, 'thres14mm_abserror': 10.568572042476838, 'thres20mm_abserror': 16.68948882927226, 'thres>20mm_abserror': 71.93596751665267}
+Epoch 1:
+Epoch 1/2, Iter 3/27097, lr 0.001000, train loss = 63.982, depth loss = 18.056, time = 1.316
+Epoch 1/2, Iter 53/27097, lr 0.001000, train loss = 8.881, depth loss = 2.325, time = 1.286
+Epoch 1/2, Iter 103/27097, lr 0.001000, train loss = 20.417, depth loss = 5.714, time = 1.356
+Epoch 1/2, Iter 153/27097, lr 0.001000, train loss = 11.540, depth loss = 3.154, time = 1.285
+Epoch 1/2, Iter 203/27097, lr 0.001000, train loss = 23.899, depth loss = 6.383, time = 1.407
+Epoch 1/2, Iter 253/27097, lr 0.001000, train loss = 16.554, depth loss = 4.626, time = 1.319
+Epoch 1/2, Iter 303/27097, lr 0.001000, train loss = 52.194, depth loss = 14.694, time = 1.338
+Epoch 1/2, Iter 353/27097, lr 0.001000, train loss = 8.215, depth loss = 2.270, time = 1.260
+Epoch 1/2, Iter 403/27097, lr 0.001000, train loss = 10.668, depth loss = 2.789, time = 1.325
+Epoch 1/2, Iter 453/27097, lr 0.001000, train loss = 7.167, depth loss = 1.864, time = 1.374
+Epoch 1/2, Iter 503/27097, lr 0.001000, train loss = 19.787, depth loss = 5.360, time = 1.339
+Epoch 1/2, Iter 553/27097, lr 0.001000, train loss = 4.068, depth loss = 0.960, time = 1.270
+Epoch 1/2, Iter 603/27097, lr 0.001000, train loss = 25.957, depth loss = 5.799, time = 1.321
+Epoch 1/2, Iter 653/27097, lr 0.001000, train loss = 32.078, depth loss = 9.043, time = 1.292
+Epoch 1/2, Iter 703/27097, lr 0.001000, train loss = 6.551, depth loss = 1.656, time = 1.268
+Epoch 1/2, Iter 753/27097, lr 0.001000, train loss = 9.746, depth loss = 2.664, time = 1.272
+Epoch 1/2, Iter 803/27097, lr 0.001000, train loss = 46.120, depth loss = 13.065, time = 1.363
+Epoch 1/2, Iter 853/27097, lr 0.001000, train loss = 6.975, depth loss = 1.872, time = 1.272
+Epoch 1/2, Iter 903/27097, lr 0.001000, train loss = 3.636, depth loss = 0.937, time = 1.314
+Epoch 1/2, Iter 953/27097, lr 0.001000, train loss = 14.460, depth loss = 3.917, time = 1.292
+Epoch 1/2, Iter 1003/27097, lr 0.001000, train loss = 99.405, depth loss = 28.144, time = 1.314
+Epoch 1/2, Iter 1053/27097, lr 0.001000, train loss = 7.661, depth loss = 2.128, time = 1.269
+Epoch 1/2, Iter 1103/27097, lr 0.001000, train loss = 4.400, depth loss = 0.997, time = 1.383
+Epoch 1/2, Iter 1153/27097, lr 0.001000, train loss = 5.689, depth loss = 1.559, time = 1.244
+Epoch 1/2, Iter 1203/27097, lr 0.001000, train loss = 6.630, depth loss = 1.667, time = 1.284
+Epoch 1/2, Iter 1253/27097, lr 0.001000, train loss = 21.386, depth loss = 5.862, time = 1.384
+Epoch 1/2, Iter 1303/27097, lr 0.001000, train loss = 8.630, depth loss = 2.371, time = 1.233
+Epoch 1/2, Iter 1353/27097, lr 0.001000, train loss = 10.091, depth loss = 2.764, time = 1.350
+Epoch 1/2, Iter 1403/27097, lr 0.001000, train loss = 12.385, depth loss = 3.262, time = 1.326
+Epoch 1/2, Iter 1453/27097, lr 0.001000, train loss = 19.054, depth loss = 5.284, time = 1.331
+Epoch 1/2, Iter 1503/27097, lr 0.001000, train loss = 17.461, depth loss = 4.298, time = 1.334
+Epoch 1/2, Iter 1553/27097, lr 0.001000, train loss = 7.320, depth loss = 1.873, time = 1.326
+Epoch 1/2, Iter 1603/27097, lr 0.001000, train loss = 8.858, depth loss = 2.408, time = 1.292
+Epoch 1/2, Iter 1653/27097, lr 0.001000, train loss = 8.995, depth loss = 2.315, time = 1.373
+Epoch 1/2, Iter 1703/27097, lr 0.001000, train loss = 10.855, depth loss = 2.776, time = 1.374
+Epoch 1/2, Iter 1753/27097, lr 0.001000, train loss = 11.198, depth loss = 2.934, time = 1.345
+Epoch 1/2, Iter 1803/27097, lr 0.001000, train loss = 6.558, depth loss = 1.767, time = 1.366
+Epoch 1/2, Iter 1853/27097, lr 0.001000, train loss = 1.905, depth loss = 0.456, time = 1.327
+Epoch 1/2, Iter 1903/27097, lr 0.001000, train loss = 14.625, depth loss = 3.788, time = 1.225
+Epoch 1/2, Iter 1953/27097, lr 0.001000, train loss = 112.748, depth loss = 30.588, time = 1.365
+Epoch 1/2, Iter 2003/27097, lr 0.001000, train loss = 18.939, depth loss = 5.194, time = 1.304
+Epoch 1/2, Iter 2053/27097, lr 0.001000, train loss = 23.648, depth loss = 6.511, time = 1.336
+Epoch 1/2, Iter 2103/27097, lr 0.001000, train loss = 9.975, depth loss = 2.621, time = 1.298
+Epoch 1/2, Iter 2153/27097, lr 0.001000, train loss = 10.767, depth loss = 2.880, time = 1.247
+Epoch 1/2, Iter 2203/27097, lr 0.001000, train loss = 14.014, depth loss = 3.762, time = 1.338
+Epoch 1/2, Iter 2253/27097, lr 0.001000, train loss = 11.274, depth loss = 2.927, time = 1.356
+Epoch 1/2, Iter 2303/27097, lr 0.001000, train loss = 36.529, depth loss = 9.491, time = 1.329
+Epoch 1/2, Iter 2353/27097, lr 0.001000, train loss = 19.807, depth loss = 5.561, time = 1.344
+Epoch 1/2, Iter 2403/27097, lr 0.001000, train loss = 6.445, depth loss = 1.608, time = 1.296
+Epoch 1/2, Iter 2453/27097, lr 0.001000, train loss = 81.130, depth loss = 21.151, time = 1.278
+Epoch 1/2, Iter 2503/27097, lr 0.001000, train loss = 25.808, depth loss = 7.147, time = 1.333
+Epoch 1/2, Iter 2553/27097, lr 0.001000, train loss = 20.528, depth loss = 5.261, time = 1.351
+Epoch 1/2, Iter 2603/27097, lr 0.001000, train loss = 36.454, depth loss = 10.308, time = 1.286
+Epoch 1/2, Iter 2653/27097, lr 0.001000, train loss = 3.697, depth loss = 0.808, time = 1.317
+Epoch 1/2, Iter 2703/27097, lr 0.001000, train loss = 19.036, depth loss = 5.144, time = 1.423
+Epoch 1/2, Iter 2753/27097, lr 0.001000, train loss = 3.645, depth loss = 0.908, time = 1.366
+Epoch 1/2, Iter 2803/27097, lr 0.001000, train loss = 18.454, depth loss = 4.933, time = 1.351
+Epoch 1/2, Iter 2853/27097, lr 0.001000, train loss = 5.057, depth loss = 1.266, time = 1.308
+Epoch 1/2, Iter 2903/27097, lr 0.001000, train loss = 4.426, depth loss = 1.121, time = 1.324
+Epoch 1/2, Iter 2953/27097, lr 0.001000, train loss = 4.264, depth loss = 1.061, time = 1.281
+Epoch 1/2, Iter 3003/27097, lr 0.001000, train loss = 3.553, depth loss = 0.932, time = 1.249
+Epoch 1/2, Iter 3053/27097, lr 0.001000, train loss = 18.225, depth loss = 4.996, time = 1.275
+Epoch 1/2, Iter 3103/27097, lr 0.001000, train loss = 4.976, depth loss = 1.309, time = 1.282
+Epoch 1/2, Iter 3153/27097, lr 0.001000, train loss = 12.841, depth loss = 3.397, time = 1.357
+Epoch 1/2, Iter 3203/27097, lr 0.001000, train loss = 45.040, depth loss = 12.613, time = 1.359
+Epoch 1/2, Iter 3253/27097, lr 0.001000, train loss = 3.374, depth loss = 0.745, time = 1.316
+Epoch 1/2, Iter 3303/27097, lr 0.001000, train loss = 5.401, depth loss = 1.378, time = 1.350
+Epoch 1/2, Iter 3353/27097, lr 0.001000, train loss = 31.321, depth loss = 8.750, time = 1.316
+Epoch 1/2, Iter 3403/27097, lr 0.001000, train loss = 7.792, depth loss = 1.996, time = 1.353
+Epoch 1/2, Iter 3453/27097, lr 0.001000, train loss = 18.368, depth loss = 5.236, time = 1.369
+Epoch 1/2, Iter 3503/27097, lr 0.001000, train loss = 51.513, depth loss = 14.246, time = 1.337
+Epoch 1/2, Iter 3553/27097, lr 0.001000, train loss = 30.197, depth loss = 8.604, time = 1.313
+Epoch 1/2, Iter 3603/27097, lr 0.001000, train loss = 14.079, depth loss = 3.887, time = 1.349
+Epoch 1/2, Iter 3653/27097, lr 0.001000, train loss = 18.342, depth loss = 4.961, time = 1.367
+Epoch 1/2, Iter 3703/27097, lr 0.001000, train loss = 22.290, depth loss = 6.142, time = 1.259
+Epoch 1/2, Iter 3753/27097, lr 0.001000, train loss = 57.096, depth loss = 16.021, time = 1.347
+Epoch 1/2, Iter 3803/27097, lr 0.001000, train loss = 15.712, depth loss = 4.367, time = 1.261
+Epoch 1/2, Iter 3853/27097, lr 0.001000, train loss = 7.832, depth loss = 2.136, time = 1.307
+Epoch 1/2, Iter 3903/27097, lr 0.001000, train loss = 5.031, depth loss = 1.327, time = 1.337
+Epoch 1/2, Iter 3953/27097, lr 0.001000, train loss = 9.379, depth loss = 2.337, time = 1.324
+Epoch 1/2, Iter 4003/27097, lr 0.001000, train loss = 10.796, depth loss = 2.866, time = 1.332
+Epoch 1/2, Iter 4053/27097, lr 0.001000, train loss = 5.615, depth loss = 1.496, time = 1.316
+Epoch 1/2, Iter 4103/27097, lr 0.001000, train loss = 56.076, depth loss = 15.006, time = 1.196
+Epoch 1/2, Iter 4153/27097, lr 0.001000, train loss = 2.367, depth loss = 0.576, time = 1.343
+Epoch 1/2, Iter 4203/27097, lr 0.001000, train loss = 15.974, depth loss = 4.264, time = 1.368
+Epoch 1/2, Iter 4253/27097, lr 0.001000, train loss = 13.336, depth loss = 3.638, time = 1.307
+Epoch 1/2, Iter 4303/27097, lr 0.001000, train loss = 34.234, depth loss = 9.510, time = 1.342
+Epoch 1/2, Iter 4353/27097, lr 0.001000, train loss = 9.855, depth loss = 2.566, time = 1.290
+Epoch 1/2, Iter 4403/27097, lr 0.001000, train loss = 19.551, depth loss = 5.245, time = 1.344
+Epoch 1/2, Iter 4453/27097, lr 0.001000, train loss = 172.202, depth loss = 48.953, time = 1.374
+Epoch 1/2, Iter 4503/27097, lr 0.001000, train loss = 6.770, depth loss = 1.790, time = 1.307
+Epoch 1/2, Iter 4553/27097, lr 0.001000, train loss = 6.212, depth loss = 1.662, time = 1.321
+Epoch 1/2, Iter 4603/27097, lr 0.001000, train loss = 22.262, depth loss = 6.251, time = 1.304
+Epoch 1/2, Iter 4653/27097, lr 0.001000, train loss = 16.720, depth loss = 4.455, time = 1.297
+Epoch 1/2, Iter 4703/27097, lr 0.001000, train loss = 7.022, depth loss = 1.774, time = 1.369
+Epoch 1/2, Iter 4753/27097, lr 0.001000, train loss = 24.222, depth loss = 6.551, time = 1.363
+Epoch 1/2, Iter 4803/27097, lr 0.001000, train loss = 61.705, depth loss = 16.492, time = 1.261
+Epoch 1/2, Iter 4853/27097, lr 0.001000, train loss = 14.624, depth loss = 3.815, time = 1.317
+Epoch 1/2, Iter 4903/27097, lr 0.001000, train loss = 92.142, depth loss = 25.419, time = 1.200
+Epoch 1/2, Iter 4953/27097, lr 0.001000, train loss = 2.701, depth loss = 0.622, time = 1.295
+Epoch 1/2, Iter 5003/27097, lr 0.001000, train loss = 58.215, depth loss = 15.728, time = 1.231
+Epoch 1/2, Iter 5053/27097, lr 0.001000, train loss = 21.957, depth loss = 6.028, time = 1.299
+Epoch 1/2, Iter 5103/27097, lr 0.001000, train loss = 35.421, depth loss = 9.931, time = 1.264
+Epoch 1/2, Iter 5153/27097, lr 0.001000, train loss = 28.095, depth loss = 7.251, time = 1.347
+Epoch 1/2, Iter 5203/27097, lr 0.001000, train loss = 51.516, depth loss = 14.334, time = 1.256
+Epoch 1/2, Iter 5253/27097, lr 0.001000, train loss = 18.092, depth loss = 5.022, time = 1.196
+Epoch 1/2, Iter 5303/27097, lr 0.001000, train loss = 7.299, depth loss = 1.868, time = 1.254
+Epoch 1/2, Iter 5353/27097, lr 0.001000, train loss = 43.353, depth loss = 12.037, time = 1.342
+Epoch 1/2, Iter 5403/27097, lr 0.001000, train loss = 14.803, depth loss = 4.112, time = 1.212
+Epoch 1/2, Iter 5453/27097, lr 0.001000, train loss = 3.412, depth loss = 0.783, time = 1.304
+Epoch 1/2, Iter 5503/27097, lr 0.001000, train loss = 19.330, depth loss = 5.288, time = 1.303
+Epoch 1/2, Iter 5553/27097, lr 0.001000, train loss = 14.439, depth loss = 3.967, time = 1.347
+Epoch 1/2, Iter 5603/27097, lr 0.001000, train loss = 22.134, depth loss = 5.960, time = 1.347
+Epoch 1/2, Iter 5653/27097, lr 0.001000, train loss = 14.170, depth loss = 3.787, time = 1.356
+Epoch 1/2, Iter 5703/27097, lr 0.001000, train loss = 60.131, depth loss = 16.891, time = 1.329
+Epoch 1/2, Iter 5753/27097, lr 0.001000, train loss = 309.373, depth loss = 87.822, time = 1.392
+Epoch 1/2, Iter 5803/27097, lr 0.001000, train loss = 5.329, depth loss = 1.423, time = 1.319
+Epoch 1/2, Iter 5853/27097, lr 0.001000, train loss = 6.878, depth loss = 1.737, time = 1.367
+Epoch 1/2, Iter 5903/27097, lr 0.001000, train loss = 4.874, depth loss = 1.253, time = 1.329
+Epoch 1/2, Iter 5953/27097, lr 0.001000, train loss = 5.050, depth loss = 1.240, time = 1.348
+Epoch 1/2, Iter 6003/27097, lr 0.001000, train loss = 11.840, depth loss = 3.259, time = 1.280
+Epoch 1/2, Iter 6053/27097, lr 0.001000, train loss = 8.394, depth loss = 2.176, time = 1.329
+Epoch 1/2, Iter 6103/27097, lr 0.001000, train loss = 14.925, depth loss = 4.082, time = 1.273
+Epoch 1/2, Iter 6153/27097, lr 0.001000, train loss = 24.534, depth loss = 5.142, time = 1.275
+Epoch 1/2, Iter 6203/27097, lr 0.001000, train loss = 5.828, depth loss = 1.551, time = 1.376
+Epoch 1/2, Iter 6253/27097, lr 0.001000, train loss = 44.402, depth loss = 12.666, time = 1.246
+Epoch 1/2, Iter 6303/27097, lr 0.001000, train loss = 18.224, depth loss = 5.127, time = 1.260
+Epoch 1/2, Iter 6353/27097, lr 0.001000, train loss = 58.929, depth loss = 16.225, time = 1.325
+Epoch 1/2, Iter 6403/27097, lr 0.001000, train loss = 71.046, depth loss = 20.079, time = 1.315
+Epoch 1/2, Iter 6453/27097, lr 0.001000, train loss = 9.354, depth loss = 2.454, time = 1.295
+Epoch 1/2, Iter 6503/27097, lr 0.001000, train loss = 65.577, depth loss = 18.494, time = 1.258
+Epoch 1/2, Iter 6553/27097, lr 0.001000, train loss = 16.862, depth loss = 4.076, time = 1.313
+Epoch 1/2, Iter 6603/27097, lr 0.001000, train loss = 6.789, depth loss = 1.730, time = 1.240
+Epoch 1/2, Iter 6653/27097, lr 0.001000, train loss = 7.729, depth loss = 2.155, time = 1.286
+Epoch 1/2, Iter 6703/27097, lr 0.001000, train loss = 28.383, depth loss = 7.759, time = 1.343
+Epoch 1/2, Iter 6753/27097, lr 0.001000, train loss = 19.953, depth loss = 5.560, time = 1.315
+Epoch 1/2, Iter 6803/27097, lr 0.001000, train loss = 67.037, depth loss = 18.133, time = 1.262
+Epoch 1/2, Iter 6853/27097, lr 0.001000, train loss = 9.225, depth loss = 2.403, time = 1.334
+Epoch 1/2, Iter 6903/27097, lr 0.001000, train loss = 3.597, depth loss = 0.837, time = 1.337
+Epoch 1/2, Iter 6953/27097, lr 0.001000, train loss = 249.677, depth loss = 71.230, time = 1.352
+Epoch 1/2, Iter 7003/27097, lr 0.001000, train loss = 5.673, depth loss = 1.516, time = 1.275
+Epoch 1/2, Iter 7053/27097, lr 0.001000, train loss = 5.271, depth loss = 1.436, time = 1.348
+Epoch 1/2, Iter 7103/27097, lr 0.001000, train loss = 4.340, depth loss = 1.093, time = 1.288
+Epoch 1/2, Iter 7153/27097, lr 0.001000, train loss = 21.535, depth loss = 5.349, time = 1.222
+Epoch 1/2, Iter 7203/27097, lr 0.001000, train loss = 17.165, depth loss = 4.558, time = 1.274
+Epoch 1/2, Iter 7253/27097, lr 0.001000, train loss = 8.139, depth loss = 2.138, time = 1.292
+Epoch 1/2, Iter 7303/27097, lr 0.001000, train loss = 5.416, depth loss = 1.377, time = 1.304
+Epoch 1/2, Iter 7353/27097, lr 0.001000, train loss = 3.294, depth loss = 0.779, time = 1.348
+Epoch 1/2, Iter 7403/27097, lr 0.001000, train loss = 97.605, depth loss = 26.808, time = 1.323
+Epoch 1/2, Iter 7453/27097, lr 0.001000, train loss = 12.816, depth loss = 3.433, time = 1.358
+Epoch 1/2, Iter 7503/27097, lr 0.001000, train loss = 5.928, depth loss = 1.523, time = 1.326
+Epoch 1/2, Iter 7553/27097, lr 0.001000, train loss = 9.790, depth loss = 2.497, time = 1.299
+Epoch 1/2, Iter 7603/27097, lr 0.001000, train loss = 19.572, depth loss = 5.450, time = 1.251
+Epoch 1/2, Iter 7653/27097, lr 0.001000, train loss = 16.961, depth loss = 4.665, time = 1.357
+Epoch 1/2, Iter 7703/27097, lr 0.001000, train loss = 9.237, depth loss = 2.475, time = 1.290
+Epoch 1/2, Iter 7753/27097, lr 0.001000, train loss = 5.199, depth loss = 1.429, time = 1.306
+Epoch 1/2, Iter 7803/27097, lr 0.001000, train loss = 13.956, depth loss = 3.852, time = 1.326
+Epoch 1/2, Iter 7853/27097, lr 0.001000, train loss = 13.677, depth loss = 3.525, time = 1.346
+Epoch 1/2, Iter 7903/27097, lr 0.001000, train loss = 9.564, depth loss = 2.523, time = 1.349
+Epoch 1/2, Iter 7953/27097, lr 0.001000, train loss = 4.870, depth loss = 1.292, time = 1.322
+Epoch 1/2, Iter 8003/27097, lr 0.001000, train loss = 15.878, depth loss = 4.347, time = 1.308
+Epoch 1/2, Iter 8053/27097, lr 0.001000, train loss = 54.335, depth loss = 15.304, time = 1.318
+Epoch 1/2, Iter 8103/27097, lr 0.001000, train loss = 14.493, depth loss = 3.957, time = 1.285
+Epoch 1/2, Iter 8153/27097, lr 0.001000, train loss = 5.518, depth loss = 1.434, time = 1.276
+Epoch 1/2, Iter 8203/27097, lr 0.001000, train loss = 9.565, depth loss = 2.505, time = 1.260
+Epoch 1/2, Iter 8253/27097, lr 0.001000, train loss = 11.412, depth loss = 2.992, time = 1.255
+Epoch 1/2, Iter 8303/27097, lr 0.001000, train loss = 2.626, depth loss = 0.665, time = 1.268
+Epoch 1/2, Iter 8353/27097, lr 0.001000, train loss = 71.300, depth loss = 19.314, time = 1.304
+Epoch 1/2, Iter 8403/27097, lr 0.001000, train loss = 10.515, depth loss = 2.720, time = 1.263
+Epoch 1/2, Iter 8453/27097, lr 0.001000, train loss = 17.472, depth loss = 4.689, time = 1.312
+Epoch 1/2, Iter 8503/27097, lr 0.001000, train loss = 82.484, depth loss = 21.389, time = 1.181
+Epoch 1/2, Iter 8553/27097, lr 0.001000, train loss = 40.404, depth loss = 11.351, time = 1.343
+Epoch 1/2, Iter 8603/27097, lr 0.001000, train loss = 11.251, depth loss = 2.946, time = 1.330
+Epoch 1/2, Iter 8653/27097, lr 0.001000, train loss = 25.239, depth loss = 6.739, time = 1.295
+Epoch 1/2, Iter 8703/27097, lr 0.001000, train loss = 47.305, depth loss = 13.284, time = 1.208
+Epoch 1/2, Iter 8753/27097, lr 0.001000, train loss = 8.270, depth loss = 2.149, time = 1.386
+Epoch 1/2, Iter 8803/27097, lr 0.001000, train loss = 3.044, depth loss = 0.750, time = 1.294
+Epoch 1/2, Iter 8853/27097, lr 0.001000, train loss = 4.245, depth loss = 1.008, time = 1.304
+Epoch 1/2, Iter 8903/27097, lr 0.001000, train loss = 5.649, depth loss = 1.515, time = 1.330
+Epoch 1/2, Iter 8953/27097, lr 0.001000, train loss = 2.122, depth loss = 0.464, time = 1.329
+Epoch 1/2, Iter 9003/27097, lr 0.001000, train loss = 16.196, depth loss = 4.421, time = 1.277
+Epoch 1/2, Iter 9053/27097, lr 0.001000, train loss = 1.900, depth loss = 0.431, time = 1.284
+Epoch 1/2, Iter 9103/27097, lr 0.001000, train loss = 3.868, depth loss = 0.968, time = 1.313
+Epoch 1/2, Iter 9153/27097, lr 0.001000, train loss = 17.320, depth loss = 3.959, time = 1.190
+Epoch 1/2, Iter 9203/27097, lr 0.001000, train loss = 3.488, depth loss = 0.824, time = 1.385
+Epoch 1/2, Iter 9253/27097, lr 0.001000, train loss = 24.571, depth loss = 5.462, time = 1.315
+Epoch 1/2, Iter 9303/27097, lr 0.001000, train loss = 8.570, depth loss = 2.366, time = 1.289
+Epoch 1/2, Iter 9353/27097, lr 0.001000, train loss = 20.506, depth loss = 5.425, time = 1.314
+Epoch 1/2, Iter 9403/27097, lr 0.001000, train loss = 3.856, depth loss = 0.962, time = 1.272
+Epoch 1/2, Iter 9453/27097, lr 0.001000, train loss = 26.877, depth loss = 7.348, time = 1.332
+Epoch 1/2, Iter 9503/27097, lr 0.001000, train loss = 5.950, depth loss = 1.509, time = 1.307
+Epoch 1/2, Iter 9553/27097, lr 0.001000, train loss = 26.157, depth loss = 7.294, time = 1.326
+Epoch 1/2, Iter 9603/27097, lr 0.001000, train loss = 30.148, depth loss = 6.760, time = 1.219
+Epoch 1/2, Iter 9653/27097, lr 0.001000, train loss = 2.689, depth loss = 0.619, time = 1.317
+Epoch 1/2, Iter 9703/27097, lr 0.001000, train loss = 4.525, depth loss = 1.198, time = 1.308
+Epoch 1/2, Iter 9753/27097, lr 0.001000, train loss = 52.768, depth loss = 15.322, time = 1.292
+Epoch 1/2, Iter 9803/27097, lr 0.001000, train loss = 14.716, depth loss = 3.830, time = 1.333
+Epoch 1/2, Iter 9853/27097, lr 0.001000, train loss = 4.348, depth loss = 1.079, time = 1.334
+Epoch 1/2, Iter 9903/27097, lr 0.001000, train loss = 5.905, depth loss = 1.490, time = 1.342
+Epoch 1/2, Iter 9953/27097, lr 0.001000, train loss = 6.773, depth loss = 1.782, time = 1.229
+Epoch 1/2, Iter 10003/27097, lr 0.001000, train loss = 6.488, depth loss = 1.672, time = 1.277
+Epoch 1/2, Iter 10053/27097, lr 0.001000, train loss = 17.641, depth loss = 4.669, time = 1.329
+Epoch 1/2, Iter 10103/27097, lr 0.001000, train loss = 4.894, depth loss = 1.231, time = 1.332
+Epoch 1/2, Iter 10153/27097, lr 0.001000, train loss = 11.831, depth loss = 3.162, time = 1.290
+Epoch 1/2, Iter 10203/27097, lr 0.001000, train loss = 13.261, depth loss = 3.049, time = 1.333
+Epoch 1/2, Iter 10253/27097, lr 0.001000, train loss = 5.926, depth loss = 1.472, time = 1.331
+Epoch 1/2, Iter 10303/27097, lr 0.001000, train loss = 10.958, depth loss = 2.835, time = 1.327
+Epoch 1/2, Iter 10353/27097, lr 0.001000, train loss = 36.826, depth loss = 9.306, time = 1.309
+Epoch 1/2, Iter 10403/27097, lr 0.001000, train loss = 19.767, depth loss = 5.411, time = 1.369
+Epoch 1/2, Iter 10453/27097, lr 0.001000, train loss = 7.366, depth loss = 1.720, time = 1.352
+Epoch 1/2, Iter 10503/27097, lr 0.001000, train loss = 13.124, depth loss = 2.405, time = 1.321
+Epoch 1/2, Iter 10553/27097, lr 0.001000, train loss = 76.308, depth loss = 20.463, time = 1.209
+Epoch 1/2, Iter 10603/27097, lr 0.001000, train loss = 9.727, depth loss = 2.566, time = 1.296
+Epoch 1/2, Iter 10653/27097, lr 0.001000, train loss = 9.198, depth loss = 2.461, time = 1.322
+Epoch 1/2, Iter 10703/27097, lr 0.001000, train loss = 35.597, depth loss = 10.014, time = 1.301
+Epoch 1/2, Iter 10753/27097, lr 0.001000, train loss = 42.142, depth loss = 11.619, time = 1.297
+Epoch 1/2, Iter 10803/27097, lr 0.001000, train loss = 10.335, depth loss = 2.763, time = 1.331
+Epoch 1/2, Iter 10853/27097, lr 0.001000, train loss = 113.462, depth loss = 31.993, time = 1.363
+Epoch 1/2, Iter 10903/27097, lr 0.001000, train loss = 94.810, depth loss = 26.738, time = 1.328
+Epoch 1/2, Iter 10953/27097, lr 0.001000, train loss = 11.890, depth loss = 3.277, time = 1.264
+Epoch 1/2, Iter 11003/27097, lr 0.001000, train loss = 45.668, depth loss = 12.947, time = 1.252
+Epoch 1/2, Iter 11053/27097, lr 0.001000, train loss = 85.368, depth loss = 24.142, time = 1.358
+Epoch 1/2, Iter 11103/27097, lr 0.001000, train loss = 28.949, depth loss = 8.184, time = 1.377
+Epoch 1/2, Iter 11153/27097, lr 0.001000, train loss = 13.356, depth loss = 3.638, time = 1.353
+Epoch 1/2, Iter 11203/27097, lr 0.001000, train loss = 16.827, depth loss = 4.742, time = 1.307
+Epoch 1/2, Iter 11253/27097, lr 0.001000, train loss = 15.544, depth loss = 3.748, time = 1.311
+Epoch 1/2, Iter 11303/27097, lr 0.001000, train loss = 37.617, depth loss = 10.199, time = 1.213
+Epoch 1/2, Iter 11353/27097, lr 0.001000, train loss = 42.335, depth loss = 11.853, time = 1.278
+Epoch 1/2, Iter 11403/27097, lr 0.001000, train loss = 42.423, depth loss = 11.302, time = 1.234
+Epoch 1/2, Iter 11453/27097, lr 0.001000, train loss = 4.394, depth loss = 1.107, time = 1.340
+Epoch 1/2, Iter 11503/27097, lr 0.001000, train loss = 12.794, depth loss = 3.508, time = 1.392
+Epoch 1/2, Iter 11553/27097, lr 0.001000, train loss = 12.509, depth loss = 3.468, time = 1.252
+Epoch 1/2, Iter 11603/27097, lr 0.001000, train loss = 8.178, depth loss = 2.337, time = 1.307
+Epoch 1/2, Iter 11653/27097, lr 0.001000, train loss = 2.403, depth loss = 0.552, time = 1.291
+Epoch 1/2, Iter 11703/27097, lr 0.001000, train loss = 5.593, depth loss = 1.360, time = 1.282
+Epoch 1/2, Iter 11753/27097, lr 0.001000, train loss = 11.396, depth loss = 3.077, time = 1.360
+Epoch 1/2, Iter 11803/27097, lr 0.001000, train loss = 16.519, depth loss = 4.411, time = 1.339
+Epoch 1/2, Iter 11853/27097, lr 0.001000, train loss = 21.440, depth loss = 5.958, time = 1.239
+Epoch 1/2, Iter 11903/27097, lr 0.001000, train loss = 73.579, depth loss = 17.577, time = 1.353
+Epoch 1/2, Iter 11953/27097, lr 0.001000, train loss = 5.409, depth loss = 1.486, time = 1.267
+Epoch 1/2, Iter 12003/27097, lr 0.001000, train loss = 5.724, depth loss = 1.464, time = 1.310
+Epoch 1/2, Iter 12053/27097, lr 0.001000, train loss = 5.738, depth loss = 1.528, time = 1.388
+Epoch 1/2, Iter 12103/27097, lr 0.001000, train loss = 10.251, depth loss = 2.735, time = 1.362
+Epoch 1/2, Iter 12153/27097, lr 0.001000, train loss = 19.340, depth loss = 5.377, time = 1.302
+Epoch 1/2, Iter 12203/27097, lr 0.001000, train loss = 2.122, depth loss = 0.440, time = 1.295
+Epoch 1/2, Iter 12253/27097, lr 0.001000, train loss = 8.082, depth loss = 2.251, time = 1.309
+Epoch 1/2, Iter 12303/27097, lr 0.001000, train loss = 8.199, depth loss = 2.119, time = 1.334
+Epoch 1/2, Iter 12353/27097, lr 0.001000, train loss = 22.518, depth loss = 5.858, time = 1.324
+Epoch 1/2, Iter 12403/27097, lr 0.001000, train loss = 8.108, depth loss = 2.026, time = 1.334
+Epoch 1/2, Iter 12453/27097, lr 0.001000, train loss = 15.943, depth loss = 4.344, time = 1.352
+Epoch 1/2, Iter 12503/27097, lr 0.001000, train loss = 5.744, depth loss = 1.192, time = 1.297
+Epoch 1/2, Iter 12553/27097, lr 0.001000, train loss = 9.201, depth loss = 2.412, time = 1.286
+Epoch 1/2, Iter 12603/27097, lr 0.001000, train loss = 8.726, depth loss = 2.416, time = 1.341
+Epoch 1/2, Iter 12653/27097, lr 0.001000, train loss = 6.924, depth loss = 1.711, time = 1.345
+Epoch 1/2, Iter 12703/27097, lr 0.001000, train loss = 8.460, depth loss = 2.194, time = 1.296
+Epoch 1/2, Iter 12753/27097, lr 0.001000, train loss = 5.000, depth loss = 1.220, time = 1.358
+Epoch 1/2, Iter 12803/27097, lr 0.001000, train loss = 2.976, depth loss = 0.700, time = 1.371
+Epoch 1/2, Iter 12853/27097, lr 0.001000, train loss = 4.791, depth loss = 1.280, time = 1.305
+Epoch 1/2, Iter 12903/27097, lr 0.001000, train loss = 74.923, depth loss = 20.060, time = 1.306
+Epoch 1/2, Iter 12953/27097, lr 0.001000, train loss = 9.271, depth loss = 2.538, time = 1.345
+Epoch 1/2, Iter 13003/27097, lr 0.001000, train loss = 32.217, depth loss = 8.969, time = 1.353
+Epoch 1/2, Iter 13053/27097, lr 0.001000, train loss = 3.130, depth loss = 0.742, time = 1.261
+Epoch 1/2, Iter 13103/27097, lr 0.001000, train loss = 121.899, depth loss = 34.644, time = 1.352
+Epoch 1/2, Iter 13153/27097, lr 0.001000, train loss = 11.115, depth loss = 3.040, time = 1.341
+Epoch 1/2, Iter 13203/27097, lr 0.001000, train loss = 56.398, depth loss = 14.690, time = 1.350
+Epoch 1/2, Iter 13253/27097, lr 0.001000, train loss = 3.134, depth loss = 0.728, time = 1.276
+Epoch 1/2, Iter 13303/27097, lr 0.001000, train loss = 12.953, depth loss = 3.411, time = 1.338
+Epoch 1/2, Iter 13353/27097, lr 0.001000, train loss = 13.589, depth loss = 3.764, time = 1.362
+Epoch 1/2, Iter 13403/27097, lr 0.001000, train loss = 4.687, depth loss = 1.215, time = 1.319
+Epoch 1/2, Iter 13453/27097, lr 0.001000, train loss = 19.362, depth loss = 5.390, time = 1.309
+Epoch 1/2, Iter 13503/27097, lr 0.001000, train loss = 8.179, depth loss = 2.267, time = 1.289
+Epoch 1/2, Iter 13553/27097, lr 0.001000, train loss = 3.126, depth loss = 0.806, time = 1.260
+Epoch 1/2, Iter 13603/27097, lr 0.001000, train loss = 4.361, depth loss = 1.060, time = 1.331
+Epoch 1/2, Iter 13653/27097, lr 0.001000, train loss = 71.894, depth loss = 20.265, time = 1.298
+Epoch 1/2, Iter 13703/27097, lr 0.001000, train loss = 4.513, depth loss = 1.138, time = 1.321
+Epoch 1/2, Iter 13753/27097, lr 0.001000, train loss = 78.402, depth loss = 22.087, time = 1.226
+Epoch 1/2, Iter 13803/27097, lr 0.001000, train loss = 16.093, depth loss = 4.358, time = 1.348
+Epoch 1/2, Iter 13853/27097, lr 0.001000, train loss = 13.639, depth loss = 3.677, time = 1.364
+Epoch 1/2, Iter 13903/27097, lr 0.001000, train loss = 4.170, depth loss = 1.079, time = 1.285
+Epoch 1/2, Iter 13953/27097, lr 0.001000, train loss = 6.830, depth loss = 1.831, time = 1.277
+Epoch 1/2, Iter 14003/27097, lr 0.001000, train loss = 74.549, depth loss = 19.989, time = 1.324
+Epoch 1/2, Iter 14053/27097, lr 0.001000, train loss = 12.729, depth loss = 3.451, time = 1.292
+Epoch 1/2, Iter 14103/27097, lr 0.001000, train loss = 7.263, depth loss = 1.926, time = 1.301
+Epoch 1/2, Iter 14153/27097, lr 0.001000, train loss = 25.072, depth loss = 6.897, time = 1.353
+Epoch 1/2, Iter 14203/27097, lr 0.001000, train loss = 10.301, depth loss = 2.752, time = 1.341
+Epoch 1/2, Iter 14253/27097, lr 0.001000, train loss = 9.630, depth loss = 2.400, time = 1.333
+Epoch 1/2, Iter 14303/27097, lr 0.001000, train loss = 10.085, depth loss = 2.518, time = 1.306
+Epoch 1/2, Iter 14353/27097, lr 0.001000, train loss = 20.814, depth loss = 3.744, time = 1.304
+Epoch 1/2, Iter 14403/27097, lr 0.001000, train loss = 2.539, depth loss = 0.643, time = 1.383
+Epoch 1/2, Iter 14453/27097, lr 0.001000, train loss = 6.993, depth loss = 1.828, time = 1.362
+Epoch 1/2, Iter 14503/27097, lr 0.001000, train loss = 5.179, depth loss = 1.361, time = 1.336
+Epoch 1/2, Iter 14553/27097, lr 0.001000, train loss = 22.534, depth loss = 6.305, time = 1.327
+Epoch 1/2, Iter 14603/27097, lr 0.001000, train loss = 11.193, depth loss = 2.992, time = 1.336
+Epoch 1/2, Iter 14653/27097, lr 0.001000, train loss = 13.186, depth loss = 3.599, time = 1.311
+Epoch 1/2, Iter 14703/27097, lr 0.001000, train loss = 28.608, depth loss = 7.553, time = 1.321
+Epoch 1/2, Iter 14753/27097, lr 0.001000, train loss = 10.491, depth loss = 2.792, time = 1.292
+Epoch 1/2, Iter 14803/27097, lr 0.001000, train loss = 62.153, depth loss = 17.728, time = 1.303
+Epoch 1/2, Iter 14853/27097, lr 0.001000, train loss = 11.038, depth loss = 3.035, time = 1.261
+Epoch 1/2, Iter 14903/27097, lr 0.001000, train loss = 4.831, depth loss = 1.273, time = 1.316
+Epoch 1/2, Iter 14953/27097, lr 0.001000, train loss = 3.202, depth loss = 0.764, time = 1.292
+Epoch 1/2, Iter 15003/27097, lr 0.001000, train loss = 4.956, depth loss = 1.159, time = 1.356
+Epoch 1/2, Iter 15053/27097, lr 0.001000, train loss = 55.886, depth loss = 15.079, time = 1.310
+Epoch 1/2, Iter 15103/27097, lr 0.001000, train loss = 7.152, depth loss = 1.744, time = 1.338
+Epoch 1/2, Iter 15153/27097, lr 0.001000, train loss = 24.603, depth loss = 6.933, time = 1.356
+Epoch 1/2, Iter 15203/27097, lr 0.001000, train loss = 10.882, depth loss = 2.878, time = 1.312
+Epoch 1/2, Iter 15253/27097, lr 0.001000, train loss = 28.716, depth loss = 7.502, time = 1.341
+Epoch 1/2, Iter 15303/27097, lr 0.001000, train loss = 12.899, depth loss = 3.489, time = 1.292
+Epoch 1/2, Iter 15353/27097, lr 0.001000, train loss = 6.454, depth loss = 1.730, time = 1.338
+Epoch 1/2, Iter 15403/27097, lr 0.001000, train loss = 25.624, depth loss = 7.091, time = 1.339
+Epoch 1/2, Iter 15453/27097, lr 0.001000, train loss = 28.437, depth loss = 7.846, time = 1.331
+Epoch 1/2, Iter 15503/27097, lr 0.001000, train loss = 9.738, depth loss = 2.493, time = 1.296
+Epoch 1/2, Iter 15553/27097, lr 0.001000, train loss = 17.953, depth loss = 4.958, time = 1.342
+Epoch 1/2, Iter 15603/27097, lr 0.001000, train loss = 2.753, depth loss = 0.615, time = 1.326
+Epoch 1/2, Iter 15653/27097, lr 0.001000, train loss = 7.163, depth loss = 1.910, time = 1.325
+Epoch 1/2, Iter 15703/27097, lr 0.001000, train loss = 20.428, depth loss = 5.627, time = 1.301
+Epoch 1/2, Iter 15753/27097, lr 0.001000, train loss = 5.303, depth loss = 1.253, time = 1.279
+Epoch 1/2, Iter 15803/27097, lr 0.001000, train loss = 21.172, depth loss = 5.868, time = 1.199
+Epoch 1/2, Iter 15853/27097, lr 0.001000, train loss = 6.729, depth loss = 1.736, time = 1.293
+Epoch 1/2, Iter 15903/27097, lr 0.001000, train loss = 7.850, depth loss = 2.069, time = 1.240
+Epoch 1/2, Iter 15953/27097, lr 0.001000, train loss = 123.271, depth loss = 32.730, time = 1.331
+Epoch 1/2, Iter 16003/27097, lr 0.001000, train loss = 18.831, depth loss = 4.988, time = 1.336
+Epoch 1/2, Iter 16053/27097, lr 0.001000, train loss = 17.279, depth loss = 4.710, time = 1.329
+Epoch 1/2, Iter 16103/27097, lr 0.001000, train loss = 15.694, depth loss = 4.223, time = 1.248
+Epoch 1/2, Iter 16153/27097, lr 0.001000, train loss = 5.935, depth loss = 1.590, time = 1.275
+Epoch 1/2, Iter 16203/27097, lr 0.001000, train loss = 50.826, depth loss = 12.570, time = 1.260
+Epoch 1/2, Iter 16253/27097, lr 0.001000, train loss = 10.473, depth loss = 2.858, time = 1.349
+Epoch 1/2, Iter 16303/27097, lr 0.001000, train loss = 37.891, depth loss = 10.768, time = 1.334
+Epoch 1/2, Iter 16353/27097, lr 0.001000, train loss = 18.204, depth loss = 5.090, time = 1.312
+Epoch 1/2, Iter 16403/27097, lr 0.001000, train loss = 4.931, depth loss = 1.182, time = 1.306
+Epoch 1/2, Iter 16453/27097, lr 0.001000, train loss = 44.228, depth loss = 11.194, time = 1.294
+Epoch 1/2, Iter 16503/27097, lr 0.001000, train loss = 3.986, depth loss = 0.965, time = 1.344
+Epoch 1/2, Iter 16553/27097, lr 0.001000, train loss = 27.109, depth loss = 5.702, time = 1.331
+Epoch 1/2, Iter 16603/27097, lr 0.001000, train loss = 57.488, depth loss = 16.556, time = 1.319
+Epoch 1/2, Iter 16653/27097, lr 0.001000, train loss = 8.288, depth loss = 2.160, time = 1.349
+Epoch 1/2, Iter 16703/27097, lr 0.001000, train loss = 3.126, depth loss = 0.757, time = 1.328
+Epoch 1/2, Iter 16753/27097, lr 0.001000, train loss = 10.089, depth loss = 2.695, time = 1.315
+Epoch 1/2, Iter 16803/27097, lr 0.001000, train loss = 6.369, depth loss = 1.559, time = 1.318
+Epoch 1/2, Iter 16853/27097, lr 0.001000, train loss = 2.519, depth loss = 0.537, time = 1.322
+Epoch 1/2, Iter 16903/27097, lr 0.001000, train loss = 18.912, depth loss = 5.272, time = 1.322
+Epoch 1/2, Iter 16953/27097, lr 0.001000, train loss = 9.265, depth loss = 2.331, time = 1.324
+Epoch 1/2, Iter 17003/27097, lr 0.001000, train loss = 5.461, depth loss = 1.461, time = 1.226
+Epoch 1/2, Iter 17053/27097, lr 0.001000, train loss = 14.360, depth loss = 3.770, time = 1.324
+Epoch 1/2, Iter 17103/27097, lr 0.001000, train loss = 8.381, depth loss = 2.315, time = 1.321
+Epoch 1/2, Iter 17153/27097, lr 0.001000, train loss = 3.149, depth loss = 0.745, time = 1.377
+Epoch 1/2, Iter 17203/27097, lr 0.001000, train loss = 1.731, depth loss = 0.407, time = 1.298
+Epoch 1/2, Iter 17253/27097, lr 0.001000, train loss = 75.992, depth loss = 21.439, time = 1.329
+Epoch 1/2, Iter 17303/27097, lr 0.001000, train loss = 21.837, depth loss = 6.026, time = 1.356
+Epoch 1/2, Iter 17353/27097, lr 0.001000, train loss = 6.662, depth loss = 1.796, time = 1.318
+Epoch 1/2, Iter 17403/27097, lr 0.001000, train loss = 25.697, depth loss = 7.120, time = 1.369
+Epoch 1/2, Iter 17453/27097, lr 0.001000, train loss = 8.168, depth loss = 2.154, time = 1.320
+Epoch 1/2, Iter 17503/27097, lr 0.001000, train loss = 43.790, depth loss = 12.215, time = 1.318
+Epoch 1/2, Iter 17553/27097, lr 0.001000, train loss = 8.404, depth loss = 2.169, time = 1.309
+Epoch 1/2, Iter 17603/27097, lr 0.001000, train loss = 7.876, depth loss = 2.055, time = 1.333
+Epoch 1/2, Iter 17653/27097, lr 0.001000, train loss = 4.119, depth loss = 1.079, time = 1.248
+Epoch 1/2, Iter 17703/27097, lr 0.001000, train loss = 9.836, depth loss = 2.707, time = 1.261
+Epoch 1/2, Iter 17753/27097, lr 0.001000, train loss = 29.019, depth loss = 8.141, time = 1.234
+Epoch 1/2, Iter 17803/27097, lr 0.001000, train loss = 30.867, depth loss = 8.593, time = 1.259
+Epoch 1/2, Iter 17853/27097, lr 0.001000, train loss = 11.234, depth loss = 3.031, time = 1.285
+Epoch 1/2, Iter 17903/27097, lr 0.001000, train loss = 64.372, depth loss = 18.141, time = 1.277
+Epoch 1/2, Iter 17953/27097, lr 0.001000, train loss = 37.898, depth loss = 10.667, time = 1.320
+Epoch 1/2, Iter 18003/27097, lr 0.001000, train loss = 3.380, depth loss = 0.853, time = 1.313
+Epoch 1/2, Iter 18053/27097, lr 0.001000, train loss = 14.622, depth loss = 3.941, time = 1.329
+Epoch 1/2, Iter 18103/27097, lr 0.001000, train loss = 8.408, depth loss = 2.107, time = 1.331
+Epoch 1/2, Iter 18153/27097, lr 0.001000, train loss = 3.792, depth loss = 0.943, time = 1.262
+Epoch 1/2, Iter 18203/27097, lr 0.001000, train loss = 10.287, depth loss = 2.574, time = 1.332
+Epoch 1/2, Iter 18253/27097, lr 0.001000, train loss = 7.734, depth loss = 1.971, time = 1.324
+Epoch 1/2, Iter 18303/27097, lr 0.001000, train loss = 6.316, depth loss = 1.644, time = 1.284
+Epoch 1/2, Iter 18353/27097, lr 0.001000, train loss = 8.134, depth loss = 2.182, time = 1.318
+Epoch 1/2, Iter 18403/27097, lr 0.001000, train loss = 15.717, depth loss = 4.144, time = 1.328
+Epoch 1/2, Iter 18453/27097, lr 0.001000, train loss = 7.185, depth loss = 1.716, time = 1.365
+Epoch 1/2, Iter 18503/27097, lr 0.001000, train loss = 159.172, depth loss = 42.865, time = 1.340
+Epoch 1/2, Iter 18553/27097, lr 0.001000, train loss = 1.878, depth loss = 0.456, time = 1.245
+Epoch 1/2, Iter 18603/27097, lr 0.001000, train loss = 12.356, depth loss = 3.218, time = 1.367
+Epoch 1/2, Iter 18653/27097, lr 0.001000, train loss = 11.261, depth loss = 2.992, time = 1.239
+Epoch 1/2, Iter 18703/27097, lr 0.001000, train loss = 6.373, depth loss = 1.679, time = 1.281
+Epoch 1/2, Iter 18753/27097, lr 0.001000, train loss = 98.069, depth loss = 26.606, time = 1.224
+Epoch 1/2, Iter 18803/27097, lr 0.001000, train loss = 8.079, depth loss = 2.103, time = 1.323
+Epoch 1/2, Iter 18853/27097, lr 0.001000, train loss = 3.899, depth loss = 1.002, time = 1.256
+Epoch 1/2, Iter 18903/27097, lr 0.001000, train loss = 58.102, depth loss = 16.134, time = 1.287
+Epoch 1/2, Iter 18953/27097, lr 0.001000, train loss = 5.640, depth loss = 1.469, time = 1.241
+Epoch 1/2, Iter 19003/27097, lr 0.001000, train loss = 6.826, depth loss = 1.773, time = 1.305
+Epoch 1/2, Iter 19053/27097, lr 0.001000, train loss = 55.861, depth loss = 13.404, time = 1.225
+Epoch 1/2, Iter 19103/27097, lr 0.001000, train loss = 13.069, depth loss = 3.464, time = 1.351
+Epoch 1/2, Iter 19153/27097, lr 0.001000, train loss = 7.619, depth loss = 2.067, time = 1.297
+Epoch 1/2, Iter 19203/27097, lr 0.001000, train loss = 27.391, depth loss = 7.737, time = 1.204
+Epoch 1/2, Iter 19253/27097, lr 0.001000, train loss = 16.008, depth loss = 4.078, time = 1.263
+Epoch 1/2, Iter 19303/27097, lr 0.001000, train loss = 5.531, depth loss = 1.344, time = 1.340
+Epoch 1/2, Iter 19353/27097, lr 0.001000, train loss = 8.337, depth loss = 2.248, time = 1.268
+Epoch 1/2, Iter 19403/27097, lr 0.001000, train loss = 3.604, depth loss = 0.861, time = 1.288
+Epoch 1/2, Iter 19453/27097, lr 0.001000, train loss = 9.567, depth loss = 2.524, time = 1.273
+Epoch 1/2, Iter 19503/27097, lr 0.001000, train loss = 16.378, depth loss = 4.585, time = 1.262
+Epoch 1/2, Iter 19553/27097, lr 0.001000, train loss = 3.602, depth loss = 0.983, time = 1.286
+Epoch 1/2, Iter 19603/27097, lr 0.001000, train loss = 3.827, depth loss = 0.955, time = 1.359
+Epoch 1/2, Iter 19653/27097, lr 0.001000, train loss = 7.917, depth loss = 1.940, time = 1.311
+Epoch 1/2, Iter 19703/27097, lr 0.001000, train loss = 4.203, depth loss = 1.046, time = 1.299
+Epoch 1/2, Iter 19753/27097, lr 0.001000, train loss = 1.560, depth loss = 0.350, time = 1.317
+Epoch 1/2, Iter 19803/27097, lr 0.001000, train loss = 5.112, depth loss = 1.324, time = 1.298
+Epoch 1/2, Iter 19853/27097, lr 0.001000, train loss = 8.223, depth loss = 2.144, time = 1.317
+Epoch 1/2, Iter 19903/27097, lr 0.001000, train loss = 3.406, depth loss = 0.781, time = 1.320
+Epoch 1/2, Iter 19953/27097, lr 0.001000, train loss = 13.300, depth loss = 3.617, time = 1.321
+Epoch 1/2, Iter 20003/27097, lr 0.001000, train loss = 1.554, depth loss = 0.345, time = 1.272
+Epoch 1/2, Iter 20053/27097, lr 0.001000, train loss = 4.669, depth loss = 1.183, time = 1.281
+Epoch 1/2, Iter 20103/27097, lr 0.001000, train loss = 6.787, depth loss = 1.772, time = 1.240
+Epoch 1/2, Iter 20153/27097, lr 0.001000, train loss = 56.447, depth loss = 15.868, time = 1.305
+Epoch 1/2, Iter 20203/27097, lr 0.001000, train loss = 16.564, depth loss = 4.523, time = 1.356
+Epoch 1/2, Iter 20253/27097, lr 0.001000, train loss = 30.171, depth loss = 8.446, time = 1.362
+Epoch 1/2, Iter 20303/27097, lr 0.001000, train loss = 9.130, depth loss = 2.406, time = 1.294
+Epoch 1/2, Iter 20353/27097, lr 0.001000, train loss = 58.052, depth loss = 16.507, time = 1.332
+Epoch 1/2, Iter 20403/27097, lr 0.001000, train loss = 11.994, depth loss = 3.105, time = 1.307
+Epoch 1/2, Iter 20453/27097, lr 0.001000, train loss = 10.183, depth loss = 2.728, time = 1.313
+Epoch 1/2, Iter 20503/27097, lr 0.001000, train loss = 55.718, depth loss = 15.813, time = 1.215
+Epoch 1/2, Iter 20553/27097, lr 0.001000, train loss = 1.245, depth loss = 0.254, time = 1.303
+Epoch 1/2, Iter 20603/27097, lr 0.001000, train loss = 14.589, depth loss = 3.943, time = 1.321
+Epoch 1/2, Iter 20653/27097, lr 0.001000, train loss = 12.698, depth loss = 2.641, time = 1.312
+Epoch 1/2, Iter 20703/27097, lr 0.001000, train loss = 3.132, depth loss = 0.751, time = 1.237
+Epoch 1/2, Iter 20753/27097, lr 0.001000, train loss = 3.647, depth loss = 0.922, time = 1.246
+Epoch 1/2, Iter 20803/27097, lr 0.001000, train loss = 11.565, depth loss = 2.930, time = 1.315
+Epoch 1/2, Iter 20853/27097, lr 0.001000, train loss = 8.481, depth loss = 2.291, time = 1.301
+Epoch 1/2, Iter 20903/27097, lr 0.001000, train loss = 2.952, depth loss = 0.722, time = 1.324
+Epoch 1/2, Iter 20953/27097, lr 0.001000, train loss = 1.966, depth loss = 0.436, time = 1.310
+Epoch 1/2, Iter 21003/27097, lr 0.001000, train loss = 2.813, depth loss = 0.695, time = 1.290
+Epoch 1/2, Iter 21053/27097, lr 0.001000, train loss = 14.322, depth loss = 2.719, time = 1.316
+Epoch 1/2, Iter 21103/27097, lr 0.001000, train loss = 8.231, depth loss = 2.288, time = 1.273
+Epoch 1/2, Iter 21153/27097, lr 0.001000, train loss = 3.346, depth loss = 0.862, time = 1.290
+Epoch 1/2, Iter 21203/27097, lr 0.001000, train loss = 13.951, depth loss = 3.933, time = 1.288
+Epoch 1/2, Iter 21253/27097, lr 0.001000, train loss = 19.983, depth loss = 4.531, time = 1.316
+Epoch 1/2, Iter 21303/27097, lr 0.001000, train loss = 3.837, depth loss = 0.857, time = 1.280
+Epoch 1/2, Iter 21353/27097, lr 0.001000, train loss = 12.647, depth loss = 3.313, time = 1.359
+Epoch 1/2, Iter 21403/27097, lr 0.001000, train loss = 31.472, depth loss = 8.881, time = 1.319
+Epoch 1/2, Iter 21453/27097, lr 0.001000, train loss = 2.919, depth loss = 0.733, time = 1.266
+Epoch 1/2, Iter 21503/27097, lr 0.001000, train loss = 3.868, depth loss = 0.953, time = 1.280
+Epoch 1/2, Iter 21553/27097, lr 0.001000, train loss = 3.935, depth loss = 1.049, time = 1.262
+Epoch 1/2, Iter 21603/27097, lr 0.001000, train loss = 29.641, depth loss = 7.975, time = 1.315
+Epoch 1/2, Iter 21653/27097, lr 0.001000, train loss = 17.863, depth loss = 4.852, time = 1.273
+Epoch 1/2, Iter 21703/27097, lr 0.001000, train loss = 7.773, depth loss = 1.939, time = 1.364
+Epoch 1/2, Iter 21753/27097, lr 0.001000, train loss = 4.292, depth loss = 1.056, time = 1.248
+Epoch 1/2, Iter 21803/27097, lr 0.001000, train loss = 45.789, depth loss = 12.992, time = 1.203
+Epoch 1/2, Iter 21853/27097, lr 0.001000, train loss = 155.683, depth loss = 44.157, time = 1.339
+Epoch 1/2, Iter 21903/27097, lr 0.001000, train loss = 12.007, depth loss = 3.115, time = 1.320
+Epoch 1/2, Iter 21953/27097, lr 0.001000, train loss = 15.664, depth loss = 4.238, time = 1.334
+Epoch 1/2, Iter 22003/27097, lr 0.001000, train loss = 7.608, depth loss = 2.058, time = 1.347
+Epoch 1/2, Iter 22053/27097, lr 0.001000, train loss = 55.739, depth loss = 15.841, time = 1.321
+Epoch 1/2, Iter 22103/27097, lr 0.001000, train loss = 38.352, depth loss = 9.951, time = 1.308
+Epoch 1/2, Iter 22153/27097, lr 0.001000, train loss = 17.569, depth loss = 4.851, time = 1.269
+Epoch 1/2, Iter 22203/27097, lr 0.001000, train loss = 2.182, depth loss = 0.476, time = 1.391
+Epoch 1/2, Iter 22253/27097, lr 0.001000, train loss = 11.394, depth loss = 3.071, time = 1.310
+Epoch 1/2, Iter 22303/27097, lr 0.001000, train loss = 15.663, depth loss = 4.218, time = 1.228
+Epoch 1/2, Iter 22353/27097, lr 0.001000, train loss = 12.136, depth loss = 3.235, time = 1.275
+Epoch 1/2, Iter 22403/27097, lr 0.001000, train loss = 24.107, depth loss = 6.835, time = 1.358
+Epoch 1/2, Iter 22453/27097, lr 0.001000, train loss = 13.224, depth loss = 3.573, time = 1.348
+Epoch 1/2, Iter 22503/27097, lr 0.001000, train loss = 31.285, depth loss = 8.921, time = 1.352
+Epoch 1/2, Iter 22553/27097, lr 0.001000, train loss = 7.111, depth loss = 1.882, time = 1.386
+Epoch 1/2, Iter 22603/27097, lr 0.001000, train loss = 3.255, depth loss = 0.757, time = 1.267
+Epoch 1/2, Iter 22653/27097, lr 0.001000, train loss = 25.831, depth loss = 7.190, time = 1.315
+Epoch 1/2, Iter 22703/27097, lr 0.001000, train loss = 3.193, depth loss = 0.799, time = 1.233
+Epoch 1/2, Iter 22753/27097, lr 0.001000, train loss = 53.348, depth loss = 12.836, time = 1.281
+Epoch 1/2, Iter 22803/27097, lr 0.001000, train loss = 13.382, depth loss = 3.642, time = 1.215
+Epoch 1/2, Iter 22853/27097, lr 0.001000, train loss = 15.308, depth loss = 4.228, time = 1.303
+Epoch 1/2, Iter 22903/27097, lr 0.001000, train loss = 8.830, depth loss = 2.360, time = 1.264
+Epoch 1/2, Iter 22953/27097, lr 0.001000, train loss = 3.641, depth loss = 0.972, time = 1.339
+Epoch 1/2, Iter 23003/27097, lr 0.001000, train loss = 11.259, depth loss = 3.068, time = 1.296
+Epoch 1/2, Iter 23053/27097, lr 0.001000, train loss = 13.940, depth loss = 3.479, time = 1.268
+Epoch 1/2, Iter 23103/27097, lr 0.001000, train loss = 10.451, depth loss = 2.740, time = 1.326
+Epoch 1/2, Iter 23153/27097, lr 0.001000, train loss = 3.254, depth loss = 0.860, time = 1.282
+Epoch 1/2, Iter 23203/27097, lr 0.001000, train loss = 13.982, depth loss = 2.340, time = 1.329
+Epoch 1/2, Iter 23253/27097, lr 0.001000, train loss = 2.814, depth loss = 0.636, time = 1.361
+Epoch 1/2, Iter 23303/27097, lr 0.001000, train loss = 4.527, depth loss = 1.143, time = 1.286
+Epoch 1/2, Iter 23353/27097, lr 0.001000, train loss = 29.812, depth loss = 8.438, time = 1.261
+Epoch 1/2, Iter 23403/27097, lr 0.001000, train loss = 8.236, depth loss = 2.015, time = 1.370
+Epoch 1/2, Iter 23453/27097, lr 0.001000, train loss = 1.426, depth loss = 0.288, time = 1.331
+Epoch 1/2, Iter 23503/27097, lr 0.001000, train loss = 3.741, depth loss = 0.963, time = 1.243
+Epoch 1/2, Iter 23553/27097, lr 0.001000, train loss = 50.765, depth loss = 14.296, time = 1.332
+Epoch 1/2, Iter 23603/27097, lr 0.001000, train loss = 8.071, depth loss = 1.955, time = 1.368
+Epoch 1/2, Iter 23653/27097, lr 0.001000, train loss = 31.176, depth loss = 7.614, time = 1.340
+Epoch 1/2, Iter 23703/27097, lr 0.001000, train loss = 2.547, depth loss = 0.614, time = 1.330
+Epoch 1/2, Iter 23753/27097, lr 0.001000, train loss = 10.460, depth loss = 2.408, time = 1.340
+Epoch 1/2, Iter 23803/27097, lr 0.001000, train loss = 33.397, depth loss = 8.363, time = 1.285
+Epoch 1/2, Iter 23853/27097, lr 0.001000, train loss = 18.049, depth loss = 5.057, time = 1.203
+Epoch 1/2, Iter 23903/27097, lr 0.001000, train loss = 4.902, depth loss = 1.299, time = 1.231
+Epoch 1/2, Iter 23953/27097, lr 0.001000, train loss = 15.948, depth loss = 4.357, time = 1.327
+Epoch 1/2, Iter 24003/27097, lr 0.001000, train loss = 5.551, depth loss = 1.472, time = 1.326
+Epoch 1/2, Iter 24053/27097, lr 0.001000, train loss = 6.071, depth loss = 1.579, time = 1.242
+Epoch 1/2, Iter 24103/27097, lr 0.001000, train loss = 6.322, depth loss = 1.541, time = 1.300
+Epoch 1/2, Iter 24153/27097, lr 0.001000, train loss = 15.987, depth loss = 4.279, time = 1.339
+Epoch 1/2, Iter 24203/27097, lr 0.001000, train loss = 7.381, depth loss = 1.891, time = 1.333
+Epoch 1/2, Iter 24253/27097, lr 0.001000, train loss = 4.738, depth loss = 1.109, time = 1.277
+Epoch 1/2, Iter 24303/27097, lr 0.001000, train loss = 13.804, depth loss = 3.684, time = 1.316
+Epoch 1/2, Iter 24353/27097, lr 0.001000, train loss = 81.242, depth loss = 21.499, time = 1.336
+Epoch 1/2, Iter 24403/27097, lr 0.001000, train loss = 9.903, depth loss = 2.671, time = 1.295
+Epoch 1/2, Iter 24453/27097, lr 0.001000, train loss = 3.609, depth loss = 0.837, time = 1.291
+Epoch 1/2, Iter 24503/27097, lr 0.001000, train loss = 52.909, depth loss = 14.802, time = 1.327
+Epoch 1/2, Iter 24553/27097, lr 0.001000, train loss = 6.815, depth loss = 1.792, time = 1.285
+Epoch 1/2, Iter 24603/27097, lr 0.001000, train loss = 4.037, depth loss = 1.036, time = 1.261
+Epoch 1/2, Iter 24653/27097, lr 0.001000, train loss = 12.933, depth loss = 3.530, time = 1.277
+Epoch 1/2, Iter 24703/27097, lr 0.001000, train loss = 3.654, depth loss = 0.980, time = 1.248
+Epoch 1/2, Iter 24753/27097, lr 0.001000, train loss = 11.057, depth loss = 2.878, time = 1.254
+Epoch 1/2, Iter 24803/27097, lr 0.001000, train loss = 3.173, depth loss = 0.693, time = 1.308
+Epoch 1/2, Iter 24853/27097, lr 0.001000, train loss = 4.642, depth loss = 1.211, time = 1.321
+Epoch 1/2, Iter 24903/27097, lr 0.001000, train loss = 5.003, depth loss = 1.203, time = 1.362
+Epoch 1/2, Iter 24953/27097, lr 0.001000, train loss = 6.639, depth loss = 1.749, time = 1.327
+Epoch 1/2, Iter 25003/27097, lr 0.001000, train loss = 6.842, depth loss = 1.807, time = 1.322
+Epoch 1/2, Iter 25053/27097, lr 0.001000, train loss = 11.034, depth loss = 2.883, time = 1.278
+Epoch 1/2, Iter 25103/27097, lr 0.001000, train loss = 8.459, depth loss = 2.131, time = 1.308
+Epoch 1/2, Iter 25153/27097, lr 0.001000, train loss = 2.974, depth loss = 0.644, time = 1.281
+Epoch 1/2, Iter 25203/27097, lr 0.001000, train loss = 5.969, depth loss = 1.470, time = 1.323
+Epoch 1/2, Iter 25253/27097, lr 0.001000, train loss = 9.141, depth loss = 2.402, time = 1.319
+Epoch 1/2, Iter 25303/27097, lr 0.001000, train loss = 50.998, depth loss = 14.290, time = 1.227
+Epoch 1/2, Iter 25353/27097, lr 0.001000, train loss = 17.398, depth loss = 3.834, time = 1.266
+Epoch 1/2, Iter 25403/27097, lr 0.001000, train loss = 55.367, depth loss = 15.571, time = 1.302
+Epoch 1/2, Iter 25453/27097, lr 0.001000, train loss = 52.522, depth loss = 14.712, time = 1.332
+Epoch 1/2, Iter 25503/27097, lr 0.001000, train loss = 20.579, depth loss = 5.652, time = 1.338
+Epoch 1/2, Iter 25553/27097, lr 0.001000, train loss = 12.601, depth loss = 3.366, time = 1.276
+Epoch 1/2, Iter 25603/27097, lr 0.001000, train loss = 2.352, depth loss = 0.514, time = 1.316
+Epoch 1/2, Iter 25653/27097, lr 0.001000, train loss = 10.421, depth loss = 2.675, time = 1.330
+Epoch 1/2, Iter 25703/27097, lr 0.001000, train loss = 19.136, depth loss = 5.317, time = 1.279
+Epoch 1/2, Iter 25753/27097, lr 0.001000, train loss = 135.312, depth loss = 37.735, time = 1.363
+Epoch 1/2, Iter 25803/27097, lr 0.001000, train loss = 7.350, depth loss = 1.941, time = 1.323
+Epoch 1/2, Iter 25853/27097, lr 0.001000, train loss = 6.655, depth loss = 1.769, time = 1.339
+Epoch 1/2, Iter 25903/27097, lr 0.001000, train loss = 62.865, depth loss = 16.985, time = 1.316
+Epoch 1/2, Iter 25953/27097, lr 0.001000, train loss = 2.904, depth loss = 0.686, time = 1.281
+Epoch 1/2, Iter 26003/27097, lr 0.001000, train loss = 3.825, depth loss = 0.897, time = 1.288
+Epoch 1/2, Iter 26053/27097, lr 0.001000, train loss = 15.248, depth loss = 4.184, time = 1.342
+Epoch 1/2, Iter 26103/27097, lr 0.001000, train loss = 8.733, depth loss = 2.335, time = 1.272
+Epoch 1/2, Iter 26153/27097, lr 0.001000, train loss = 17.794, depth loss = 4.656, time = 1.340
+Epoch 1/2, Iter 26203/27097, lr 0.001000, train loss = 8.326, depth loss = 2.196, time = 1.257
+Epoch 1/2, Iter 26253/27097, lr 0.001000, train loss = 9.672, depth loss = 2.647, time = 1.321
+Epoch 1/2, Iter 26303/27097, lr 0.001000, train loss = 5.599, depth loss = 1.539, time = 1.233
+Epoch 1/2, Iter 26353/27097, lr 0.001000, train loss = 27.129, depth loss = 7.488, time = 1.264
+Epoch 1/2, Iter 26403/27097, lr 0.001000, train loss = 24.658, depth loss = 6.762, time = 1.329
+Epoch 1/2, Iter 26453/27097, lr 0.001000, train loss = 13.563, depth loss = 3.715, time = 1.282
+Epoch 1/2, Iter 26503/27097, lr 0.001000, train loss = 12.173, depth loss = 3.280, time = 1.333
+Epoch 1/2, Iter 26553/27097, lr 0.001000, train loss = 10.662, depth loss = 2.818, time = 1.254
+Epoch 1/2, Iter 26603/27097, lr 0.001000, train loss = 29.089, depth loss = 8.127, time = 1.274
+Epoch 1/2, Iter 26653/27097, lr 0.001000, train loss = 2.088, depth loss = 0.460, time = 1.264
+Epoch 1/2, Iter 26703/27097, lr 0.001000, train loss = 10.929, depth loss = 2.310, time = 1.303
+Epoch 1/2, Iter 26753/27097, lr 0.001000, train loss = 46.068, depth loss = 11.407, time = 1.260
+Epoch 1/2, Iter 26803/27097, lr 0.001000, train loss = 3.094, depth loss = 0.697, time = 1.292
+Epoch 1/2, Iter 26853/27097, lr 0.001000, train loss = 7.782, depth loss = 2.079, time = 1.231
+Epoch 1/2, Iter 26903/27097, lr 0.001000, train loss = 23.878, depth loss = 5.871, time = 1.241
+Epoch 1/2, Iter 26953/27097, lr 0.001000, train loss = 8.833, depth loss = 2.268, time = 1.362
+Epoch 1/2, Iter 27003/27097, lr 0.001000, train loss = 2.158, depth loss = 0.505, time = 1.313
+Epoch 1/2, Iter 27053/27097, lr 0.001000, train loss = 6.914, depth loss = 1.596, time = 1.255
+Epoch 1/2, Iter 3/7546, test loss = 10.287, depth loss = 2.778, time = 0.550118
+Epoch 1/2, Iter 53/7546, test loss = 1.799, depth loss = 0.461, time = 0.565840
+Epoch 1/2, Iter 103/7546, test loss = 2.543, depth loss = 0.641, time = 0.569726
+Epoch 1/2, Iter 153/7546, test loss = 2.185, depth loss = 0.496, time = 0.593573
+Epoch 1/2, Iter 203/7546, test loss = 2.160, depth loss = 0.566, time = 0.588795
+Epoch 1/2, Iter 253/7546, test loss = 1.607, depth loss = 0.379, time = 0.610461
+Epoch 1/2, Iter 303/7546, test loss = 1.478, depth loss = 0.355, time = 0.602508
+Epoch 1/2, Iter 353/7546, test loss = 14.398, depth loss = 4.062, time = 0.588753
+Epoch 1/2, Iter 403/7546, test loss = 20.286, depth loss = 5.664, time = 0.564681
+Epoch 1/2, Iter 453/7546, test loss = 13.030, depth loss = 3.642, time = 0.550678
+Epoch 1/2, Iter 503/7546, test loss = 10.721, depth loss = 2.718, time = 0.558300
+Epoch 1/2, Iter 553/7546, test loss = 47.198, depth loss = 13.043, time = 0.582552
+Epoch 1/2, Iter 603/7546, test loss = 16.385, depth loss = 4.463, time = 0.620367
+Epoch 1/2, Iter 653/7546, test loss = 30.200, depth loss = 8.295, time = 0.614867
+Epoch 1/2, Iter 703/7546, test loss = 10.830, depth loss = 3.017, time = 0.587435
+Epoch 1/2, Iter 753/7546, test loss = 6.235, depth loss = 1.654, time = 0.584924
+Epoch 1/2, Iter 803/7546, test loss = 5.291, depth loss = 1.350, time = 0.591468
+Epoch 1/2, Iter 853/7546, test loss = 3.375, depth loss = 0.802, time = 0.609112
+Epoch 1/2, Iter 903/7546, test loss = 3.289, depth loss = 0.786, time = 0.622839
+Epoch 1/2, Iter 953/7546, test loss = 48.639, depth loss = 13.491, time = 0.630814
+Epoch 1/2, Iter 1003/7546, test loss = 3.747, depth loss = 0.938, time = 0.594460
+Epoch 1/2, Iter 1053/7546, test loss = 45.609, depth loss = 12.855, time = 0.517799
+Epoch 1/2, Iter 1103/7546, test loss = 65.395, depth loss = 18.469, time = 0.550317
+Epoch 1/2, Iter 1153/7546, test loss = 15.587, depth loss = 3.583, time = 0.551693
+Epoch 1/2, Iter 1203/7546, test loss = 1.904, depth loss = 0.444, time = 0.581671
+Epoch 1/2, Iter 1253/7546, test loss = 2.260, depth loss = 0.498, time = 0.650735
+Epoch 1/2, Iter 1303/7546, test loss = 22.138, depth loss = 5.295, time = 0.590143
+Epoch 1/2, Iter 1353/7546, test loss = 23.522, depth loss = 6.320, time = 0.588097
+Epoch 1/2, Iter 1403/7546, test loss = 88.170, depth loss = 24.307, time = 0.592828
+Epoch 1/2, Iter 1453/7546, test loss = 12.564, depth loss = 3.412, time = 0.584436
+Epoch 1/2, Iter 1503/7546, test loss = 47.644, depth loss = 12.804, time = 0.627226
+Epoch 1/2, Iter 1553/7546, test loss = 8.248, depth loss = 2.214, time = 0.633708
+Epoch 1/2, Iter 1603/7546, test loss = 8.957, depth loss = 2.353, time = 0.606050
+Epoch 1/2, Iter 1653/7546, test loss = 16.229, depth loss = 4.167, time = 0.613900
+Epoch 1/2, Iter 1703/7546, test loss = 12.329, depth loss = 3.286, time = 0.628550
+Epoch 1/2, Iter 1753/7546, test loss = 11.854, depth loss = 3.329, time = 0.567278
+Epoch 1/2, Iter 1803/7546, test loss = 64.276, depth loss = 18.309, time = 0.535602
+Epoch 1/2, Iter 1853/7546, test loss = 28.615, depth loss = 7.909, time = 0.636473
+Epoch 1/2, Iter 1903/7546, test loss = 101.626, depth loss = 28.332, time = 0.553867
+Epoch 1/2, Iter 1953/7546, test loss = 26.650, depth loss = 7.395, time = 0.606616
+Epoch 1/2, Iter 2003/7546, test loss = 38.670, depth loss = 10.748, time = 0.606828
+Epoch 1/2, Iter 2053/7546, test loss = 56.743, depth loss = 15.814, time = 0.631202
+Epoch 1/2, Iter 2103/7546, test loss = 4.042, depth loss = 0.918, time = 0.572634
+Epoch 1/2, Iter 2153/7546, test loss = 31.828, depth loss = 8.947, time = 0.582011
+Epoch 1/2, Iter 2203/7546, test loss = 3.125, depth loss = 0.691, time = 0.574631
+Epoch 1/2, Iter 2253/7546, test loss = 23.244, depth loss = 6.298, time = 0.538982
+Epoch 1/2, Iter 2303/7546, test loss = 5.429, depth loss = 1.337, time = 0.643239
+Epoch 1/2, Iter 2353/7546, test loss = 5.238, depth loss = 1.123, time = 0.603469
+Epoch 1/2, Iter 2403/7546, test loss = 35.263, depth loss = 9.822, time = 0.575533
+Epoch 1/2, Iter 2453/7546, test loss = 9.755, depth loss = 2.645, time = 0.589500
+Epoch 1/2, Iter 2503/7546, test loss = 4.308, depth loss = 1.043, time = 0.627585
+Epoch 1/2, Iter 2553/7546, test loss = 6.392, depth loss = 1.457, time = 0.611444
+Epoch 1/2, Iter 2603/7546, test loss = 6.900, depth loss = 1.787, time = 0.601719
+Epoch 1/2, Iter 2653/7546, test loss = 9.336, depth loss = 2.268, time = 0.630276
+Epoch 1/2, Iter 2703/7546, test loss = 3.821, depth loss = 1.004, time = 0.601096
+Epoch 1/2, Iter 2753/7546, test loss = 62.914, depth loss = 17.759, time = 0.600139
+Epoch 1/2, Iter 2803/7546, test loss = 17.221, depth loss = 4.722, time = 0.619258
+Epoch 1/2, Iter 2853/7546, test loss = 6.066, depth loss = 1.497, time = 0.638110
+Epoch 1/2, Iter 2903/7546, test loss = 5.039, depth loss = 1.234, time = 0.626723
+Epoch 1/2, Iter 2953/7546, test loss = 8.006, depth loss = 1.959, time = 0.621715
+Epoch 1/2, Iter 3003/7546, test loss = 6.102, depth loss = 1.450, time = 0.671416
+Epoch 1/2, Iter 3053/7546, test loss = 5.595, depth loss = 1.360, time = 0.604931
+Epoch 1/2, Iter 3103/7546, test loss = 11.125, depth loss = 2.935, time = 0.537935
+Epoch 1/2, Iter 3153/7546, test loss = 7.003, depth loss = 1.742, time = 0.602387
+Epoch 1/2, Iter 3203/7546, test loss = 10.672, depth loss = 2.774, time = 0.577341
+Epoch 1/2, Iter 3253/7546, test loss = 10.988, depth loss = 2.833, time = 0.606350
+Epoch 1/2, Iter 3303/7546, test loss = 11.276, depth loss = 2.626, time = 0.610032
+Epoch 1/2, Iter 3353/7546, test loss = 69.253, depth loss = 18.860, time = 0.600315
+Epoch 1/2, Iter 3403/7546, test loss = 4.838, depth loss = 0.996, time = 0.607817
+Epoch 1/2, Iter 3453/7546, test loss = 76.164, depth loss = 21.495, time = 0.528606
+Epoch 1/2, Iter 3503/7546, test loss = 89.106, depth loss = 25.210, time = 0.496520
+Epoch 1/2, Iter 3553/7546, test loss = 24.960, depth loss = 6.746, time = 0.560027
+Epoch 1/2, Iter 3603/7546, test loss = 24.307, depth loss = 6.559, time = 0.549828
+Epoch 1/2, Iter 3653/7546, test loss = 122.615, depth loss = 34.451, time = 0.578390
+Epoch 1/2, Iter 3703/7546, test loss = 37.238, depth loss = 10.042, time = 0.611420
+Epoch 1/2, Iter 3753/7546, test loss = 175.294, depth loss = 49.573, time = 0.568428
+Epoch 1/2, Iter 3803/7546, test loss = 57.364, depth loss = 16.073, time = 0.553181
+Epoch 1/2, Iter 3853/7546, test loss = 17.644, depth loss = 4.855, time = 0.556394
+Epoch 1/2, Iter 3903/7546, test loss = 28.067, depth loss = 7.457, time = 0.548999
+Epoch 1/2, Iter 3953/7546, test loss = 6.728, depth loss = 1.827, time = 0.561769
+Epoch 1/2, Iter 4003/7546, test loss = 9.364, depth loss = 2.560, time = 0.607911
+Epoch 1/2, Iter 4053/7546, test loss = 6.834, depth loss = 1.884, time = 0.608145
+Epoch 1/2, Iter 4103/7546, test loss = 5.470, depth loss = 1.403, time = 0.596037
+Epoch 1/2, Iter 4153/7546, test loss = 101.839, depth loss = 28.633, time = 0.555740
+Epoch 1/2, Iter 4203/7546, test loss = 81.435, depth loss = 23.113, time = 0.533046
+Epoch 1/2, Iter 4253/7546, test loss = 37.505, depth loss = 9.930, time = 0.584974
+Epoch 1/2, Iter 4303/7546, test loss = 51.800, depth loss = 14.693, time = 0.545362
+Epoch 1/2, Iter 4353/7546, test loss = 18.711, depth loss = 5.215, time = 0.564802
+Epoch 1/2, Iter 4403/7546, test loss = 14.299, depth loss = 3.791, time = 0.601720
+Epoch 1/2, Iter 4453/7546, test loss = 50.985, depth loss = 14.515, time = 0.564281
+Epoch 1/2, Iter 4503/7546, test loss = 24.561, depth loss = 6.854, time = 0.534148
+Epoch 1/2, Iter 4553/7546, test loss = 1.685, depth loss = 0.414, time = 0.555376
+Epoch 1/2, Iter 4603/7546, test loss = 13.657, depth loss = 3.029, time = 0.575023
+Epoch 1/2, Iter 4653/7546, test loss = 3.603, depth loss = 0.944, time = 0.562118
+Epoch 1/2, Iter 4703/7546, test loss = 2.480, depth loss = 0.575, time = 0.561699
+Epoch 1/2, Iter 4753/7546, test loss = 4.749, depth loss = 1.089, time = 0.587032
+Epoch 1/2, Iter 4803/7546, test loss = 138.699, depth loss = 39.433, time = 0.495522
+Epoch 1/2, Iter 4853/7546, test loss = 89.478, depth loss = 25.395, time = 0.526882
+Epoch 1/2, Iter 4903/7546, test loss = 107.734, depth loss = 30.546, time = 0.515916
+Epoch 1/2, Iter 4953/7546, test loss = 57.941, depth loss = 16.212, time = 0.580595
+Epoch 1/2, Iter 5003/7546, test loss = 56.925, depth loss = 16.185, time = 0.544589
+Epoch 1/2, Iter 5053/7546, test loss = 18.840, depth loss = 5.165, time = 0.598386
+Epoch 1/2, Iter 5103/7546, test loss = 19.513, depth loss = 5.474, time = 0.601466
+Epoch 1/2, Iter 5153/7546, test loss = 32.551, depth loss = 9.113, time = 0.582037
+Epoch 1/2, Iter 5203/7546, test loss = 25.490, depth loss = 7.197, time = 0.609277
+Epoch 1/2, Iter 5253/7546, test loss = 38.584, depth loss = 10.996, time = 0.569358
+Epoch 1/2, Iter 5303/7546, test loss = 41.223, depth loss = 11.310, time = 0.574089
+Epoch 1/2, Iter 5353/7546, test loss = 31.924, depth loss = 8.976, time = 0.572476
+Epoch 1/2, Iter 5403/7546, test loss = 41.221, depth loss = 10.439, time = 0.612847
+Epoch 1/2, Iter 5453/7546, test loss = 25.258, depth loss = 7.030, time = 0.625578
+Epoch 1/2, Iter 5503/7546, test loss = 9.013, depth loss = 2.401, time = 0.569553
+Epoch 1/2, Iter 5553/7546, test loss = 6.798, depth loss = 1.760, time = 0.593267
+Epoch 1/2, Iter 5603/7546, test loss = 8.724, depth loss = 2.298, time = 0.583884
+Epoch 1/2, Iter 5653/7546, test loss = 7.537, depth loss = 2.004, time = 0.583198
+Epoch 1/2, Iter 5703/7546, test loss = 7.139, depth loss = 1.796, time = 0.639705
+Epoch 1/2, Iter 5753/7546, test loss = 22.479, depth loss = 5.217, time = 0.631662
+Epoch 1/2, Iter 5803/7546, test loss = 3.354, depth loss = 0.797, time = 0.634841
+Epoch 1/2, Iter 5853/7546, test loss = 20.836, depth loss = 5.703, time = 0.525561
+Epoch 1/2, Iter 5903/7546, test loss = 38.598, depth loss = 10.964, time = 0.582422
+Epoch 1/2, Iter 5953/7546, test loss = 31.851, depth loss = 7.761, time = 0.609229
+Epoch 1/2, Iter 6003/7546, test loss = 23.293, depth loss = 6.455, time = 0.592197
+Epoch 1/2, Iter 6053/7546, test loss = 47.164, depth loss = 13.425, time = 0.623205
+Epoch 1/2, Iter 6103/7546, test loss = 145.268, depth loss = 40.840, time = 0.609674
+Epoch 1/2, Iter 6153/7546, test loss = 72.207, depth loss = 20.541, time = 0.617024
+Epoch 1/2, Iter 6203/7546, test loss = 50.535, depth loss = 14.148, time = 0.518438
+Epoch 1/2, Iter 6253/7546, test loss = 127.652, depth loss = 36.187, time = 0.457495
+Epoch 1/2, Iter 6303/7546, test loss = 50.454, depth loss = 12.294, time = 0.587359
+Epoch 1/2, Iter 6353/7546, test loss = 210.072, depth loss = 59.515, time = 0.519117
+Epoch 1/2, Iter 6403/7546, test loss = 227.196, depth loss = 64.090, time = 0.558984
+Epoch 1/2, Iter 6453/7546, test loss = 339.160, depth loss = 95.152, time = 0.576923
+Epoch 1/2, Iter 6503/7546, test loss = 234.519, depth loss = 66.454, time = 0.587032
+Epoch 1/2, Iter 6553/7546, test loss = 36.610, depth loss = 10.266, time = 0.663425
+Epoch 1/2, Iter 6603/7546, test loss = 9.100, depth loss = 2.379, time = 0.614999
+Epoch 1/2, Iter 6653/7546, test loss = 14.335, depth loss = 3.912, time = 0.649598
+Epoch 1/2, Iter 6703/7546, test loss = 11.908, depth loss = 3.148, time = 0.585506
+Epoch 1/2, Iter 6753/7546, test loss = 5.181, depth loss = 1.279, time = 0.631430
+Epoch 1/2, Iter 6803/7546, test loss = 25.751, depth loss = 6.867, time = 0.672817
+Epoch 1/2, Iter 6853/7546, test loss = 8.153, depth loss = 2.050, time = 0.623660
+Epoch 1/2, Iter 6903/7546, test loss = 2.398, depth loss = 0.583, time = 0.643154
+Epoch 1/2, Iter 6953/7546, test loss = 1.095, depth loss = 0.246, time = 0.610612
+Epoch 1/2, Iter 7003/7546, test loss = 2.313, depth loss = 0.602, time = 0.657913
+Epoch 1/2, Iter 7053/7546, test loss = 1.012, depth loss = 0.213, time = 0.640013
+Epoch 1/2, Iter 7103/7546, test loss = 1.302, depth loss = 0.318, time = 0.625346
+Epoch 1/2, Iter 7153/7546, test loss = 1.711, depth loss = 0.392, time = 0.547385
+Epoch 1/2, Iter 7203/7546, test loss = 12.019, depth loss = 3.096, time = 0.668600
+Epoch 1/2, Iter 7253/7546, test loss = 4.700, depth loss = 1.113, time = 0.608680
+Epoch 1/2, Iter 7303/7546, test loss = 2.947, depth loss = 0.686, time = 0.648777
+Epoch 1/2, Iter 7353/7546, test loss = 3.159, depth loss = 0.708, time = 0.639903
+Epoch 1/2, Iter 7403/7546, test loss = 4.849, depth loss = 1.200, time = 0.647816
+Epoch 1/2, Iter 7453/7546, test loss = 2.824, depth loss = 0.662, time = 0.644952
+Epoch 1/2, Iter 7503/7546, test loss = 2.775, depth loss = 0.634, time = 0.637315
+avg_test_scalars: {'loss': 30.804274362687437, 'depth_loss': 8.490062748526045, 'abs_depth_error': 8.854000878522038, 'thres2mm_error': 0.2237127064990747, 'thres4mm_error': 0.15890875269617608, 'thres8mm_error': 0.11765799187397225, 'thres14mm_error': 0.09267418449137726, 'thres20mm_error': 0.07968373882818668, 'thres2mm_abserror': 0.5865070965390858, 'thres4mm_abserror': 2.7762750997298156, 'thres8mm_abserror': 5.620107608103101, 'thres14mm_abserror': 10.546806707263404, 'thres20mm_abserror': 16.641831792699477, 'thres>20mm_abserror': 71.96651581203847}

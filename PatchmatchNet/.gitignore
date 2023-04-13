@@ -1,0 +1,7 @@
+.idea
+venv
+__pycache__
+**/customized
+**/dtu
+**/eth3d
+**/tanks
